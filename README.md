@@ -35,16 +35,16 @@ Each site ships with: a sticky booking flow, transparent pricing, trust signals 
 
 ## Live sites
 
-The pages are static, so they run anywhere. After deploying (see **Deploy** below), the links are:
+Hosted with **GitHub Pages** (served from the `docs/` folder):
 
-| Page | Path |
+| Page | Link |
 |------|------|
-| Portfolio (home) | `https://<your-domain>/` |
-| Lumière | `https://<your-domain>/demos/lumiere/` |
-| Sage & Sol | `https://<your-domain>/demos/sage-sol/` |
-| Meridian | `https://<your-domain>/demos/meridian/` |
+| **Portfolio (home)** | https://sambricca.github.io/AI-Made-Websites-That-Not-Look-Like-Made-By-AI/ |
+| Lumière — luxury injectables | https://sambricca.github.io/AI-Made-Websites-That-Not-Look-Like-Made-By-AI/demos/lumiere/ |
+| Sage & Sol — skin + IV wellness | https://sambricca.github.io/AI-Made-Websites-That-Not-Look-Like-Made-By-AI/demos/sage-sol/ |
+| Meridian — laser / body / weight-loss | https://sambricca.github.io/AI-Made-Websites-That-Not-Look-Like-Made-By-AI/demos/meridian/ |
 
-Prefer to look first? See **Run locally** — it's two commands.
+Prefer to look first? See **Run locally** below.
 
 ---
 
@@ -78,10 +78,10 @@ Med spas live on local discovery, so every page ships search-ready:
 
 ## How it's built — the system
 
-The point is that these aren't one-offs. Each page is authored once in `build/src/` with a `/*__FONTS__*/` placeholder, and a small Python step injects the right subset of base64-embedded web fonts, writing the finished self-contained page into `site/`.
+The point is that these aren't one-offs. Each page is authored once in `build/src/` with a `/*__FONTS__*/` placeholder, and a small Python step injects the right subset of base64-embedded web fonts, writing the finished self-contained page into `docs/` (the folder GitHub Pages serves).
 
 ```
-build/src/*.html   ──►   build/build.py   ──►   site/**/index.html
+build/src/*.html   ──►   build/build.py   ──►   docs/**/index.html
  (templated,           (injects embedded          (finished, fully
   fonts as a             @font-face faces          self-contained pages)
   placeholder)           per brand)
@@ -95,10 +95,10 @@ build/src/*.html   ──►   build/build.py   ──►   site/**/index.html
 
 ## Run locally
 
-No build needed to view — the files in `site/` are final. Just serve the folder:
+No build needed to view — the files in `docs/` are final. Just serve the folder:
 
 ```bash
-cd site
+cd docs
 python -m http.server 8000
 ```
 
@@ -113,7 +113,7 @@ To change copy, colors, or fonts, edit the templated sources and rebuild:
 ```bash
 # edit build/src/demo-lumiere.html (or any page)
 cd build
-python build.py            # rebuild all pages into ../site
+python build.py            # rebuild all pages into ../docs
 python build.py lumiere    # or just one: portfolio | lumiere | sagesol | meridian
 ```
 
@@ -123,9 +123,9 @@ Booking forms include a marked `<!-- GHL embed slot -->` where a Go High Level c
 
 ## Deploy
 
-**Netlify (fastest, clean domain):** drag the `site/` folder onto <https://app.netlify.com/drop>, create a free account to keep it, then rename the site. Your pages are then at `https://<name>.netlify.app/`, `/demos/lumiere/`, etc.
+**GitHub Pages (current):** this repo is served from the `main` branch `/docs` folder, so the pages live at the **Live sites** links above. To reproduce on a fork: Settings → Pages → Source: *Deploy from a branch* → Branch `main`, folder `/docs` → Save.
 
-**GitHub Pages (from this repo):** Settings → Pages → deploy from branch. Because the site lives in `/site`, pages resolve under `…/site/` (e.g. `https://<user>.github.io/<repo>/site/demos/lumiere/`). For a root-level Pages URL, deploy the `site/` folder on its own instead (Netlify is simpler for that).
+**Netlify (alternative, shorter domain):** drag the `docs/` folder onto <https://app.netlify.com/drop>, create a free account to keep it, then rename the site. Your pages are then at `https://<name>.netlify.app/`, `/demos/lumiere/`, etc.
 
 ---
 
@@ -134,14 +134,14 @@ Booking forms include a marked `<!-- GHL embed slot -->` where a Go High Level c
 ```
 .
 ├── README.md
-├── site/                        # the deployable static site (all pages final & self-contained)
+├── docs/                        # the deployable static site — served by GitHub Pages
 │   ├── index.html               #   portfolio landing page
 │   └── demos/
 │       ├── lumiere/index.html   #   Demo 01 · luxury injectables
 │       ├── sage-sol/index.html  #   Demo 02 · skin + IV wellness
 │       └── meridian/index.html  #   Demo 03 · laser / body / weight-loss
 └── build/                       # the reproducible build system
-    ├── build.py                 #   injects embedded fonts, writes ../site
+    ├── build.py                 #   injects embedded fonts, writes ../docs
     ├── src/*.html               #   templated page sources (with font placeholder)
     └── fonts/fonts_b64.json     #   base64-embedded web fonts (latin subset)
 ```

@@ -15,7 +15,7 @@ import json, os, sys
 
 HERE  = os.path.dirname(os.path.abspath(__file__))          # .../build
 ROOT  = os.path.dirname(HERE)                                # repo root
-SITE  = os.path.join(ROOT, "site")                           # output
+SITE  = os.path.join(ROOT, "docs")                           # output (served by GitHub Pages)
 FONTS = json.load(open(os.path.join(HERE, "fonts", "fonts_b64.json"), encoding="utf-8"))
 
 def face(family, weight, style):
