@@ -1,0 +1,14 @@
+# --- Private application materials — NEVER publish these ---
+# Personal interview strategy, the Loom script, and the "what to paste" cheat-sheet.
+# They stay on your machine; they are not part of the public showcase.
+LOOM-SCRIPT.md
+APPLICATION-GUIDE.md
+
+# --- Local editor / agent settings ---
+.claude/
+
+# --- OS / Python cruft ---
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db

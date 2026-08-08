@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Meridian Body + Skin | Laser, Body Contouring &amp; Medical Weight Loss in Denver, CO</title>
+<meta name="description" content="Meridian Body + Skin is a results-driven medical spa in Denver, CO. Laser hair removal, Morpheus8 skin tightening, CoolSculpting body contouring and physician-supervised GLP-1 weight loss. Book a free consult.">
+<meta name="theme-color" content="#12202b">
+<link rel="canonical" href="https://meridianbodyskin.example/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Meridian Body + Skin | Denver, CO">
+<meta property="og:description" content="Physician-supervised laser, body contouring and medical weight loss in Denver.">
+<meta property="og:locale" content="en_US">
+<style>
+/*__FONTS__*/
+:root{
+  --ink:#12202b; --slate:#1c3140; --slate-2:#26465b; --steel:#3a5a70;
+  --ice:#eef4f7; --sky:#d6e7ea; --paper:#ffffff; --paper-2:#f6fafb;
+  --teal:#159e93; --teal-2:#39c2b4; --deep:#0d5a56; --sand:#cbae83; --sand-2:#e0cba6;
+  --text:#14232e; --muted:#5a6c79; --line:rgba(20,35,46,.12); --line-d:rgba(57,194,180,.28);
+  --disp:'Schibsted Grotesk',system-ui,sans-serif;
+  --body:'Hanken Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--ice);color:var(--text);font-family:var(--body);font-size:17px;line-height:1.62;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--disp);font-weight:700;margin:0;text-wrap:balance;letter-spacing:-.02em;line-height:1.04}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.label{font-family:var(--disp);font-weight:600;font-size:.72rem;letter-spacing:.18em;text-transform:uppercase;color:var(--deep);display:inline-flex;align-items:center;gap:.6em}
+.label::before{content:"";width:8px;height:8px;background:var(--teal);border-radius:2px;transform:rotate(45deg);display:inline-block}
+.on-dark .label{color:var(--teal-2)}
+
+.btn{display:inline-flex;align-items:center;gap:.5em;font-family:var(--disp);font-weight:600;font-size:.85rem;letter-spacing:.01em;padding:15px 26px;border-radius:8px;transition:.28s cubic-bezier(.2,.7,.2,1);cursor:pointer;border:1.5px solid transparent}
+.btn-solid{background:var(--teal);color:#04211f}
+.btn-solid:hover{background:var(--teal-2);transform:translateY(-2px);box-shadow:0 14px 30px -12px rgba(21,158,147,.55)}
+.btn-dark{background:var(--ink);color:var(--ice)}
+.btn-dark:hover{background:var(--slate-2);transform:translateY(-2px)}
+.btn-ghost{border-color:var(--line);color:var(--text)}
+.btn-ghost:hover{border-color:var(--ink);background:var(--ink);color:var(--ice)}
+.on-dark .btn-ghost{border-color:rgba(214,231,234,.35);color:var(--ice)}
+.on-dark .btn-ghost:hover{background:var(--teal);color:#04211f;border-color:var(--teal)}
+
+header.site{position:sticky;top:0;z-index:60;background:rgba(238,244,247,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:13px 28px;max-width:1280px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:.55em;font-family:var(--disp);font-weight:700;font-size:1.32rem;letter-spacing:-.02em;color:var(--ink)}
+.brand .mk{width:26px;height:26px;flex:none}
+nav.main{display:flex;gap:26px;font-family:var(--body);font-weight:500;font-size:.88rem}
+nav.main a{color:var(--text);opacity:.82;transition:.2s}
+nav.main a:hover{opacity:1;color:var(--deep)}
+.hdr-cta{display:flex;align-items:center;gap:16px}
+.hdr-phone{font-family:var(--disp);font-weight:600;font-size:.85rem;color:var(--ink);white-space:nowrap}
+.menu-btn{display:none;background:none;border:0;color:var(--ink);cursor:pointer;padding:6px;font-size:1.2rem}
+@media(max-width:1040px){.hdr-phone{display:none}}
+
+/* hero */
+.hero{position:relative;background:var(--ink);color:var(--ice);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(90% 70% at 88% 15%,rgba(57,194,180,.28),transparent 55%),
+  radial-gradient(70% 80% at 5% 95%,rgba(38,70,91,.9),transparent 60%),
+  linear-gradient(160deg,#173042,#12202b 55%,#0e1a24)}
+.hero::after{content:"";position:absolute;inset:0;opacity:.5;background-image:radial-gradient(rgba(214,231,234,.11) 1px,transparent 1px);background-size:22px 22px;mask-image:linear-gradient(180deg,#000,transparent 85%)}
+.hero-inner{position:relative;z-index:2;max-width:var(--wrap);margin:0 auto;padding:84px 28px 80px;display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:center}
+.hero h1{font-size:clamp(2.8rem,6.4vw,5rem);letter-spacing:-.03em}
+.hero h1 .tl{color:var(--teal-2)}
+.hero .lede{max-width:38ch;color:var(--sky);font-size:1.07rem;margin-top:22px}
+.hero .cta-row{display:flex;gap:13px;flex-wrap:wrap;margin-top:30px}
+.hero .assure{display:flex;gap:22px;margin-top:28px;flex-wrap:wrap;font-size:.86rem;color:var(--sky)}
+.hero .assure b{color:var(--ice)}
+.hero .assure .c{display:flex;align-items:center;gap:.5em}
+.hero .assure .c::before{content:"✓";color:var(--teal-2);font-weight:700}
+.hero-card{position:relative;border:1px solid var(--line-d);border-radius:16px;background:linear-gradient(180deg,rgba(38,70,91,.55),rgba(14,26,36,.4));backdrop-filter:blur(4px);padding:26px;box-shadow:0 40px 80px -40px rgba(0,0,0,.7)}
+.hero-card .kh{font-family:var(--disp);font-weight:600;font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;color:var(--teal-2)}
+.hero-card .kbig{font-family:var(--disp);font-weight:700;font-size:2.4rem;letter-spacing:-.02em;margin:8px 0 2px}
+.hero-card .kbig s{color:var(--steel);font-size:.5em;font-weight:500}
+.hero-card .ksub{color:var(--sky);font-size:.9rem}
+.hero-card .mini{aspect-ratio:16/9;margin-top:18px;border-radius:10px;overflow:hidden;position:relative;background:radial-gradient(70% 90% at 30% 20%,rgba(57,194,180,.55),transparent 60%),linear-gradient(150deg,#2a4a5e,#0d5a56 80%)}
+.hero-card .mini .lbl{position:absolute;left:0;right:0;bottom:0;padding:12px 14px;font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sky);background:linear-gradient(0deg,rgba(9,18,25,.75),transparent)}
+.hero-card .row{display:flex;justify-content:space-between;align-items:center;margin-top:16px;gap:12px}
+.hero-card .row .btn{padding:12px 18px;font-size:.78rem}
+
+/* stats band */
+.stats{background:var(--slate);color:var(--ice)}
+.stats .grid{display:grid;grid-template-columns:repeat(4,1fr);max-width:var(--wrap);margin:0 auto}
+.stats .st{padding:30px 28px;border-left:1px solid rgba(214,231,234,.14)}
+.stats .st:first-child{border-left:0}
+.stats .st b{font-family:var(--disp);font-weight:700;font-size:2.2rem;letter-spacing:-.02em;color:var(--teal-2);display:block;line-height:1}
+.stats .st span{font-size:.82rem;color:var(--sky);margin-top:6px;display:block}
+
+section{padding:92px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:44px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(2.1rem,4.6vw,3.3rem);max-width:16ch;color:var(--ink)}
+.sec-head p{max-width:38ch;color:var(--muted)}
+
+/* services */
+.svc-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.svc-grid .card:nth-child(1){grid-column:span 4;border-radius:20px}
+.svc-grid .card:nth-child(2){grid-column:span 2}
+.svc-grid .card:nth-child(3){grid-column:span 3}
+.svc-grid .card:nth-child(4){grid-column:span 3}
+.svc-grid .card:nth-child(5){grid-column:span 2}
+.svc-grid .card:nth-child(6){grid-column:span 4;border-radius:20px}
+.svc-grid .card:nth-child(1) h3,.svc-grid .card:nth-child(6) h3{font-size:1.7rem}
+.card{position:relative;background:var(--paper);border:1px solid var(--line);border-radius:14px;padding:28px 26px;transition:.28s;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-4px);box-shadow:0 26px 48px -30px rgba(20,35,46,.4);border-color:var(--teal)}
+.card .top{display:flex;justify-content:flex-end;align-items:flex-start;gap:12px;margin-bottom:2px}
+.card .tagt{font-family:var(--disp);font-weight:600;font-size:.62rem;letter-spacing:.12em;text-transform:uppercase;color:var(--sand);background:rgba(203,174,131,.14);padding:5px 9px;border-radius:100px}
+.card h3{font-size:1.34rem;margin:16px 0 8px;color:var(--ink)}
+.card p{color:var(--muted);font-size:.92rem;flex:1}
+.card .foot{display:flex;justify-content:space-between;align-items:baseline;margin-top:18px;padding-top:16px;border-top:1px solid var(--line)}
+.card .price{font-family:var(--disp);font-weight:700;font-size:1.2rem;color:var(--ink)}
+.card .price s{color:var(--muted);font-weight:500;font-size:.68rem}
+.card .go{font-family:var(--disp);font-weight:600;font-size:.8rem;color:var(--deep)}
+
+/* program / GLP band */
+.program{background:var(--ink);color:var(--ice);position:relative;overflow:hidden}
+.program::before{content:"";position:absolute;inset:0;background:radial-gradient(70% 120% at 88% 10%,rgba(57,194,180,.22),transparent 55%);}
+.program .grid{position:relative;display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+.program h2{font-size:clamp(2.2rem,5vw,3.6rem);color:var(--ice)}
+.program h2 em{font-style:normal;color:var(--teal-2)}
+.program p{color:var(--sky);margin-top:16px;max-width:42ch}
+.program ul{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:11px}
+.program li{display:flex;gap:11px;color:var(--sky);font-size:.97rem}
+.program li::before{content:"✓";color:var(--teal-2);font-weight:700;flex:none}
+.pcard{border:1px solid var(--line-d);border-radius:16px;padding:34px 30px;background:linear-gradient(180deg,rgba(38,70,91,.5),transparent)}
+.pcard .k{font-family:var(--disp);font-weight:600;font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-2)}
+.pcard .big{font-family:var(--disp);font-weight:700;font-size:3rem;letter-spacing:-.02em;line-height:1;margin:8px 0}
+.pcard .big small{font-size:.32em;color:var(--sky);font-weight:500}
+.pcard .list{display:grid;gap:12px;margin-top:20px}
+.pcard .li{display:flex;justify-content:space-between;font-size:.9rem;color:var(--sky);padding-bottom:10px;border-bottom:1px solid rgba(214,231,234,.12)}
+.pcard .li b{color:var(--ice);font-family:var(--disp);font-weight:600}
+.pcard .btn{width:100%;justify-content:center;margin-top:22px}
+
+/* reviews */
+.reviews{background:var(--paper-2)}
+.rev-top{display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap;margin-bottom:38px}
+.rev-badge{display:flex;align-items:center;gap:14px;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 20px}
+.rev-badge .n{font-family:var(--disp);font-weight:700;font-size:2rem;color:var(--ink);line-height:1}
+.rev-badge .st{color:var(--sand);letter-spacing:.08em}
+.rev-badge .s2{font-size:.8rem;color:var(--muted)}
+.rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.rev-grid .rev:first-child{grid-column:1/-1;border-radius:22px}
+.rev-grid .rev:first-child p{font-size:1.35rem}
+.rev{background:var(--paper);border:1px solid var(--line);border-radius:18px 18px 18px 4px;padding:26px 24px}
+.rev .st{color:var(--sand);letter-spacing:.08em}
+.rev p{font-size:1.06rem;line-height:1.5;color:var(--text);margin:12px 0 18px;font-weight:500}
+.rev .who{font-family:var(--disp);font-weight:600;font-size:.82rem;color:var(--deep)}
+.rev .who span{color:var(--muted);font-weight:400}
+
+/* director */
+.director .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:52px;align-items:center}
+.director .portrait{aspect-ratio:4/5;border-radius:16px;overflow:hidden;position:relative;border:1px solid var(--line);background:radial-gradient(70% 55% at 60% 25%,rgba(57,194,180,.4),transparent 60%),linear-gradient(160deg,#3a5a70,#0d5a56 75%,#12202b)}
+.director .portrait .lbl{position:absolute;bottom:0;left:0;right:0;padding:20px;background:linear-gradient(0deg,rgba(9,18,25,.8),transparent);color:var(--sky);font-size:.66rem;letter-spacing:.16em;text-transform:uppercase}
+.director h2{font-size:clamp(2rem,4vw,3rem);color:var(--ink)}
+.director blockquote{font-size:1.3rem;line-height:1.5;margin:18px 0;color:var(--slate-2);font-weight:500}
+.creds{display:flex;gap:24px;flex-wrap:wrap;margin-top:20px}
+.cred b{font-family:var(--disp);font-weight:700;font-size:1.8rem;color:var(--deep);display:block;line-height:1}
+.cred span{font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+/* faq */
+.faq{background:var(--ice)}
+.faq .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:52px;align-items:start}
+details{border-bottom:1px solid var(--line);padding:20px 0}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;font-family:var(--disp);font-weight:600;font-size:1.16rem;color:var(--ink)}
+summary::-webkit-details-marker{display:none}
+summary .ico{color:var(--teal);font-size:1.3rem;transition:.3s;flex:none;font-family:var(--body)}
+details[open] summary .ico{transform:rotate(45deg)}
+.ans{color:var(--muted);margin-top:12px;max-width:60ch;font-size:.96rem}
+
+/* visit */
+.visit{background:var(--ink);color:var(--ice)}
+.visit .grid{display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line-d);border-radius:16px;overflow:hidden}
+.visit .info{padding:48px 42px}
+.visit h2{color:var(--ice);font-size:2.2rem;margin-bottom:22px}
+.nap{display:grid;gap:17px}
+.nap .row{display:flex;gap:14px}
+.nap .k{font-family:var(--disp);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-2);width:80px;flex:none;padding-top:3px;font-weight:600}
+.nap .v{color:var(--sky);font-size:.96rem;line-height:1.6}
+.nap .v b{color:var(--ice);font-weight:600}
+.map{position:relative;min-height:330px;background:linear-gradient(rgba(57,194,180,.06),rgba(57,194,180,.06)),repeating-linear-gradient(0deg,#1a2f3e 0 40px,#16283544 40px 41px),repeating-linear-gradient(90deg,#1a2f3e 0 40px,#16283544 40px 41px)}
+.map::after{content:"";position:absolute;top:50%;left:50%;width:16px;height:16px;transform:translate(-50%,-50%);border-radius:50% 50% 50% 0;rotate:-45deg;background:var(--teal-2);box-shadow:0 0 0 6px rgba(57,194,180,.22)}
+.map .plabel{position:absolute;top:16px;left:16px;font-family:var(--disp);font-size:.62rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sky);opacity:.75}
+
+/* book */
+.book{background:var(--paper-2);padding-bottom:104px}
+.book .inner{text-align:center;max-width:640px;margin:0 auto}
+.book h2{font-size:clamp(2.2rem,5.2vw,3.6rem);color:var(--ink)}
+.book p{color:var(--muted);margin:16px auto 0;max-width:46ch}
+.bform{margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:13px;text-align:left}
+.bform .full{grid-column:1/-1}
+.bform label{display:block;font-family:var(--disp);font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--deep);margin-bottom:7px}
+.bform input,.bform select{width:100%;background:var(--paper);border:1.5px solid var(--line);color:var(--text);padding:14px 16px;border-radius:10px;font-family:var(--body);font-size:.95rem}
+.bform input:focus,.bform select:focus{outline:2px solid var(--teal);outline-offset:1px;border-color:transparent}
+.bform button{grid-column:1/-1;justify-content:center;margin-top:6px}
+.bnote{grid-column:1/-1;text-align:center;font-size:.78rem;color:var(--muted)}
+.formmsg{grid-column:1/-1;text-align:center;font-family:var(--disp);font-weight:600;font-size:1.15rem;color:var(--deep);padding:8px;display:none}
+
+footer.site{background:#0d1a24;color:var(--sky);padding:56px 0 36px;font-family:var(--body)}
+footer .grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:34px;border-bottom:1px solid rgba(214,231,234,.14)}
+footer .brand{color:var(--ice);margin-bottom:12px}
+footer h4{font-family:var(--disp);font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--teal-2);margin:0 0 14px;font-weight:600}
+footer a,footer li{color:var(--sky);opacity:.88;font-size:.92rem;line-height:2}
+footer ul{list-style:none;margin:0;padding:0}
+footer .fine{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:22px;font-size:.76rem;opacity:.6}
+
+.concept{position:fixed;bottom:14px;left:14px;z-index:80;background:rgba(13,26,36,.92);color:var(--teal-2);border:1px solid var(--line-d);border-radius:100px;padding:8px 15px;font-family:var(--disp);font-size:.66rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;backdrop-filter:blur(6px)}
+.concept b{color:var(--ice);font-weight:600}
+
+.reveal{}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--teal-2);outline-offset:2px;border-radius:3px}
+@keyframes riseIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.hero-inner>div:first-child>*,.hero-inner>.eyebrow,.hero-inner>h1,.hero-inner>.lede,.hero-inner>.tagline,.hero-inner>.cta-row,.hero-card{animation:riseIn .7s cubic-bezier(.2,.7,.2,1) both}
+.hero-inner>div:first-child>*:nth-child(2),.hero-inner>h1{animation-delay:.07s}
+.hero-inner>div:first-child>*:nth-child(3),.hero-inner>.lede{animation-delay:.14s}
+.hero-inner>div:first-child>*:nth-child(4),.hero-inner>.tagline{animation-delay:.2s}
+.hero-inner>div:first-child>*:nth-child(5),.hero-inner>.cta-row{animation-delay:.27s}
+.hero-card{animation-delay:.18s}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:900px){
+  nav.main{display:none}.menu-btn{display:block}
+  .hero-inner,.program .grid,.director .grid,.faq .grid,.visit .grid{grid-template-columns:1fr}
+  .stats .grid{grid-template-columns:1fr 1fr}
+  .stats .st:nth-child(3){border-left:0}
+  .svc-grid,.rev-grid{grid-template-columns:1fr 1fr}.svc-grid .card{grid-column:auto}
+  section{padding:68px 0}
+}
+@media(max-width:600px){.svc-grid,.rev-grid,.bform,.stats .grid{grid-template-columns:1fr}.stats .st{border-left:0!important;border-top:1px solid rgba(214,231,234,.14)}.stats .st:first-child{border-top:0}.hero-inner{padding:60px 22px}.concept{font-size:.6rem}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="#top"><svg class="mk" viewBox="0 0 28 28" fill="none"><rect x="1" y="1" width="26" height="26" rx="7" fill="#12202b"/><path d="M8 19V9l6 7 6-7v10" stroke="#39c2b4" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>Meridian</a>
+    <nav class="main">
+      <a href="#services">Treatments</a>
+      <a href="#program">Weight Loss</a>
+      <a href="#director">Our Team</a>
+      <a href="#faq">FAQ</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="hdr-cta">
+      <span class="hdr-phone">(303) 555-0176</span>
+      <a href="#book" class="btn btn-solid">Free Consult</a>
+    </div>
+    <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('nav.main').scrollIntoView()">☰</button>
+  </div>
+</header>
+<main>
+
+<a id="top"></a>
+<section class="hero" style="padding:0">
+  <div class="hero-inner">
+    <div>
+      <span class="label">Denver · Cherry Creek</span>
+      <h1 style="margin-top:18px">Real results,<br><span class="tl">measured</span> and guaranteed.</h1>
+      <p class="lede">Physician-supervised laser, body contouring and medical weight loss, with treatment plans built on data, not hope. See your projected results before you commit.</p>
+      <div class="cta-row">
+        <a href="#book" class="btn btn-solid">Book a Free Consult →</a>
+        <a href="#services" class="btn btn-ghost">Explore Treatments</a>
+      </div>
+      <div class="assure">
+        <span class="c"><b>Board-certified</b>&nbsp;medical director</span>
+        <span class="c">FDA-cleared devices</span>
+        <span class="c">0% financing</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="kh">Member Result · 12-week program</div>
+      <div class="kbig">-18 lbs <s>avg.</s></div>
+      <div class="ksub">Average loss on our physician-supervised GLP-1 plan.</div>
+      <div class="mini"><div class="lbl">◐ Before / after · client photography</div></div>
+      <div class="row">
+        <div style="font-size:.82rem;color:var(--sky)">Starting at <b style="color:var(--ice);font-family:var(--disp)">$299/mo</b></div>
+        <a href="#program" class="btn btn-solid">See the plan</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div class="grid">
+    <div class="st"><b>12,000+</b><span>Treatments performed</span></div>
+    <div class="st"><b>4.8★</b><span>430+ Google reviews</span></div>
+    <div class="st"><b>6</b><span>FDA-cleared platforms</span></div>
+    <div class="st"><b>2</b><span>On-site medical directors</span></div>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="label">Treatments</span><h2 style="margin-top:16px">Technology that does the heavy lifting.</h2></div>
+      <p>Every treatment starts with a free consult and a written plan, including honest pricing and realistic timelines.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="card reveal">
+        <div class="top"><span class="tagt">Most booked</span></div>
+        <h3>Laser Hair Removal</h3><p>Fast, comfortable, permanent reduction on every skin tone with our latest diode platform.</p>
+        <div class="foot"><span class="price">$99<s> /session</s></span><span class="go">Packages →</span></div>
+      </div>
+      <div class="card reveal">
+        <h3>Morpheus8 Skin Tightening</h3><p>RF microneedling that firms, smooths and lifts, for jawline, neck and texture.</p>
+        <div class="foot"><span class="price">$900</span><span class="go">Learn more →</span></div>
+      </div>
+      <div class="card reveal">
+        <h3>Body Contouring</h3><p>CoolSculpting® Elite freezes stubborn fat with no surgery and no downtime.</p>
+        <div class="foot"><span class="price">$750<s> /area</s></span><span class="go">Learn more →</span></div>
+      </div>
+      <div class="card reveal">
+        <div class="top"><span class="tagt">Physician-led</span></div>
+        <h3>Medical Weight Loss</h3><p>GLP-1 (semaglutide &amp; tirzepatide) programs supervised by our physicians.</p>
+        <div class="foot"><span class="price">$299<s> /mo</s></span><span class="go">See program →</span></div>
+      </div>
+      <div class="card reveal">
+        <h3>Laser Skin Resurfacing</h3><p>Fractional resurfacing for tone, scars, pores and sun damage. Denver-tough skin, renewed.</p>
+        <div class="foot"><span class="price">$650</span><span class="go">Learn more →</span></div>
+      </div>
+      <div class="card reveal">
+        <h3>IV &amp; NAD+ Wellness</h3><p>Altitude recovery, energy and longevity drips dosed by our nursing team.</p>
+        <div class="foot"><span class="price">$149</span><span class="go">See menu →</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="program" class="program">
+  <div class="wrap">
+    <div class="grid reveal">
+      <div>
+        <span class="label">Physician-Supervised</span>
+        <h2 style="margin-top:16px">The Meridian <em>weight-loss</em> program.</h2>
+        <p>A complete GLP-1 program: medication, labs, coaching and body-composition tracking, all supervised by our board-certified physicians. Built to keep the weight off, not just take it off.</p>
+        <ul>
+          <li>Physician consult &amp; baseline labs included</li>
+          <li>Semaglutide or tirzepatide, shipped or in-clinic</li>
+          <li>Monthly check-ins &amp; body-composition scans</li>
+          <li>Cancel anytime, no long lock-in contracts</li>
+        </ul>
+        <div class="cta-row" style="margin-top:26px"><a href="#book" class="btn btn-solid">Check if you qualify →</a></div>
+      </div>
+      <div class="pcard">
+        <div class="k">Complete Program</div>
+        <div class="big">$299<small> /month</small></div>
+        <div class="list">
+          <div class="li"><span>Physician oversight</span><b>Included</b></div>
+          <div class="li"><span>Baseline &amp; follow-up labs</span><b>Included</b></div>
+          <div class="li"><span>Medication</span><b>From $299</b></div>
+          <div class="li"><span>Coaching &amp; check-ins</span><b>Monthly</b></div>
+          <div class="li" style="border-bottom:0"><span>Avg. member result</span><b>-18 lbs / 12 wk</b></div>
+        </div>
+        <a href="#book" class="btn btn-solid">Start My Consult</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="rev-top reveal">
+      <div><span class="label">Denver Trusts Meridian</span><h2 style="margin-top:14px;font-size:clamp(2rem,4.4vw,3rem);color:var(--ink)">Outcomes people come back for.</h2></div>
+      <div class="rev-badge"><div class="n">4.8</div><div><div class="st">★★★★★</div><div class="s2">430+ Google reviews</div></div></div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev reveal"><div class="st">★★★★★</div><p>"Down 22 pounds and the check-ins keep me accountable. The physician actually listens. This isn't a pill mill."</p><div class="who">Michael D. <span>· Cherry Creek</span></div></div>
+      <div class="rev reveal"><div class="st">★★★★★</div><p>"Six laser sessions and I'm done shaving forever. Clean clinic, on-time appointments, real professionals."</p><div class="who">Alyssa P. <span>· Wash Park</span></div></div>
+      <div class="rev reveal"><div class="st">★★★★★</div><p>"CoolSculpting on my flanks gave me back the jeans I love. They showed me projected results up front, no surprises."</p><div class="who">Derek H. <span>· LoDo</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="director" class="director">
+  <div class="wrap">
+    <div class="grid">
+      <div class="portrait reveal"><div class="lbl">◐ Medical director portrait · client photography</div></div>
+      <div class="reveal">
+        <span class="label">Medical Director</span>
+        <h2 style="margin-top:14px">Dr. Priya Raman, MD</h2>
+        <blockquote>"We don't sell treatments. We build outcomes. If a plan won't work for your body, we'll tell you before you spend a dollar."</blockquote>
+        <p style="color:var(--muted)">Board-certified and fellowship-trained, Dr. Raman leads a clinical team that treats aesthetics like medicine: measured, evidence-based and personalized. Every device is FDA-cleared and every plan is signed off by a physician.</p>
+        <div class="creds">
+          <div class="cred"><b>MD</b><span>Board-Certified</span></div>
+          <div class="cred"><b>15 yrs</b><span>Aesthetic Medicine</span></div>
+          <div class="cred"><b>12k+</b><span>Treatments Overseen</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="wrap">
+    <div class="grid">
+      <div class="reveal"><span class="label">Questions</span><h2 style="margin-top:14px;font-size:clamp(2rem,4vw,3rem);color:var(--ink)">Everything you want to know first.</h2><p style="color:var(--muted);margin-top:16px">Book a free consult and we'll answer the rest in person, with a written plan and honest pricing.</p></div>
+      <div class="reveal">
+        <details open><summary>How much does laser hair removal cost in Denver? <span class="ico">+</span></summary><div class="ans">Single sessions start at $99, but most guests save with a package, priced at your free consult based on the treatment area. We offer 0% financing to spread it out.</div></details>
+        <details><summary>Do I qualify for the GLP-1 weight-loss program? <span class="ico">+</span></summary><div class="ans">Most adults with a qualifying BMI or weight-related condition do. A physician reviews your health history and labs first, because safety comes before any prescription.</div></details>
+        <details><summary>Is there downtime with body contouring? <span class="ico">+</span></summary><div class="ans">CoolSculpting® Elite has essentially no downtime, so most guests return to work the same day. Morpheus8 and resurfacing have a few days of redness we'll walk you through.</div></details>
+        <details><summary>Are your providers medically supervised? <span class="ico">+</span></summary><div class="ans">Yes. Meridian is led by a board-certified medical director, and every treatment plan and prescription is physician-reviewed.</div></details>
+        <details><summary>Where are you located? <span class="ico">+</span></summary><div class="ans">We're in Cherry Creek at 250 Detroit St, Suite 300, Denver. We serve Cherry Creek, Wash Park, LoDo and the greater Denver metro.</div></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visit" class="visit">
+  <div class="wrap">
+    <div class="grid">
+      <div class="info">
+        <h2>Visit Meridian</h2>
+        <div class="nap">
+          <div class="row"><div class="k">Address</div><div class="v"><b>Meridian Body + Skin</b><br>250 Detroit St, Suite 300<br>Denver, CO 80206</div></div>
+          <div class="row"><div class="k">Phone</div><div class="v"><b>(303) 555-0176</b></div></div>
+          <div class="row"><div class="k">Hours</div><div class="v">Mon-Fri · 9am to 7pm<br>Saturday · 9am to 3pm<br>Sunday · Closed</div></div>
+          <div class="row"><div class="k">Parking</div><div class="v">Validated garage parking · Cherry Creek North</div></div>
+        </div>
+        <div class="cta-row" style="margin-top:30px"><a href="#book" class="btn btn-solid">Book Free Consult</a></div>
+      </div>
+      <div class="map" role="img" aria-label="Map of Meridian Body + Skin in Cherry Creek, Denver"><span class="plabel">Cherry Creek North · 80206</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="book" class="book">
+  <div class="wrap">
+    <div class="inner">
+      <span class="label" style="justify-content:center">Book a Free Consult</span>
+      <h2 style="margin-top:16px">See your plan before you commit.</h2>
+      <p>Tell us your goal. We'll confirm your complimentary consult within one business hour.</p>
+      <form class="bform" onsubmit="return mdSubmit(event)">
+        <!-- GHL calendar / form embed slot -->
+        <div><label for="f_name">First name</label><input id="f_name" required placeholder="Jordan" autocomplete="given-name"></div>
+        <div><label for="f_phone">Phone</label><input id="f_phone" required type="tel" placeholder="(303) 555-0000" autocomplete="tel"></div>
+        <div class="full"><label for="f_svc">What's your goal?</label>
+          <select id="f_svc"><option>Free consult</option><option>Laser hair removal</option><option>Medical weight loss (GLP-1)</option><option>Body contouring</option><option>Morpheus8 / skin tightening</option><option>Laser resurfacing</option><option>Not sure yet</option></select>
+        </div>
+        <button class="btn btn-dark" type="submit">Request My Consult →</button>
+        <div class="bnote">By requesting, you agree to be contacted about your appointment.</div>
+        <div class="formmsg" id="mdMsg">Thank you! This is a concept demo. On a live build this connects to your Go High Level calendar and texts the guest a confirmation.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <div class="brand" style="font-family:var(--disp);font-weight:700;font-size:1.4rem;color:var(--ice)">Meridian</div>
+        <p style="max-width:34ch;opacity:.85">Physician-supervised laser, body contouring and medical weight loss in Cherry Creek, Denver.</p>
+      </div>
+      <div><h4>Treatments</h4><ul><li><a href="#services">Laser Hair Removal</a></li><li><a href="#services">Body Contouring</a></li><li><a href="#program">Medical Weight Loss</a></li><li><a href="#services">Morpheus8</a></li></ul></div>
+      <div><h4>Clinic</h4><ul><li>250 Detroit St #300</li><li>Denver, CO 80206</li><li><a href="tel:+13035550176">(303) 555-0176</a></li><li>Mon-Sat by appointment</li></ul></div>
+    </div>
+    <div class="fine"><span>© 2026 Meridian Body + Skin</span><span>Individual results vary · Physician-supervised · Not medical advice</span></div>
+  </div>
+</footer>
+
+<div class="concept">Concept site · portfolio demo by <b>Santiago Ambricca</b></div>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":["MedicalBusiness","HealthAndBeautyBusiness"],
+  "name":"Meridian Body + Skin",
+  "description":"Results-driven medical spa in Cherry Creek, Denver offering laser hair removal, Morpheus8 skin tightening, CoolSculpting body contouring and physician-supervised GLP-1 medical weight loss.",
+  "url":"https://meridianbodyskin.example/",
+  "telephone":"+1-303-555-0176",
+  "priceRange":"$$-$$$",
+  "image":"https://meridianbodyskin.example/og.jpg",
+  "address":{"@type":"PostalAddress","streetAddress":"250 Detroit St, Suite 300","addressLocality":"Denver","addressRegion":"CO","postalCode":"80206","addressCountry":"US"},
+  "geo":{"@type":"GeoCoordinates","latitude":39.7180,"longitude":-104.9540},
+  "areaServed":["Denver","Cherry Creek","Washington Park","LoDo"],
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"19:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"15:00"}
+  ],
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.8","reviewCount":"431"},
+  "hasOfferCatalog":{"@type":"OfferCatalog","name":"Body & Skin Treatments","itemListElement":[
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Laser Hair Removal"},"price":"99","priceCurrency":"USD"},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Medical Weight Loss (GLP-1)"},"price":"299","priceCurrency":"USD"},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"CoolSculpting Body Contouring"},"price":"750","priceCurrency":"USD"}
+  ]}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"How much does laser hair removal cost in Denver?","acceptedAnswer":{"@type":"Answer","text":"Single sessions start at $99, but most guests save with a package priced at their free consult based on the area. 0% financing is available."}},
+    {"@type":"Question","name":"Do I qualify for the GLP-1 weight-loss program?","acceptedAnswer":{"@type":"Answer","text":"Most adults with a qualifying BMI or weight-related condition qualify. A physician reviews your health history and labs before any prescription."}},
+    {"@type":"Question","name":"Is there downtime with body contouring?","acceptedAnswer":{"@type":"Answer","text":"CoolSculpting Elite has essentially no downtime. Morpheus8 and resurfacing involve a few days of redness."}},
+    {"@type":"Question","name":"Are your providers medically supervised?","acceptedAnswer":{"@type":"Answer","text":"Yes. Meridian is led by a board-certified medical director, and every plan and prescription is physician-reviewed."}}
+  ]
+}
+</script>
+<script>
+function mdSubmit(e){e.preventDefault();document.getElementById('mdMsg').style.display='block';e.target.querySelector('button').textContent='Request received ✓';return false;}
+
+</script>
+</body>
+</html>

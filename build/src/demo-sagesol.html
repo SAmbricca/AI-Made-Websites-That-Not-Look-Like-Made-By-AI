@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sage &amp; Sol Skin + Wellness | HydraFacial, Peels &amp; IV Drip in Austin, TX</title>
+<meta name="description" content="Sage &amp; Sol is a skin-health and IV wellness studio in South Austin, TX. HydraFacial, medical facials, chemical peels, microneedling and vitamin drip therapy by licensed medical estheticians. Book your glow.">
+<meta name="theme-color" content="#1f4034">
+<link rel="canonical" href="https://sageandsolwellness.example/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Sage &amp; Sol Skin + Wellness | Austin, TX">
+<meta property="og:description" content="Skin health, not skin perfection. Facials, peels and IV drips in South Austin.">
+<meta property="og:locale" content="en_US">
+<style>
+/*__FONTS__*/
+:root{
+  --mist:#f2f5ef; --cream:#faf9f3; --paper:#fbfaf5;
+  --pine:#1f4034; --forest:#2c5546; --sage:#7f9b88; --sage-2:#a9bfae;
+  --honey:#cf9d3f; --honey-2:#e3bd6b; --clay:#b06a48;
+  --ink:#1b2a23; --muted:#566a5f; --line:rgba(31,64,52,.14); --line-2:rgba(207,157,63,.5);
+  --serif:'Fraunces','Georgia',serif;
+  --sans:'Instrument Sans',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--mist);color:var(--ink);font-family:var(--sans);font-size:17px;line-height:1.66;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--serif);font-weight:600;margin:0;text-wrap:balance;letter-spacing:-.01em;line-height:1.05}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.eyebrow{font-family:var(--sans);font-weight:600;font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--forest);display:inline-flex;align-items:center;gap:.7em}
+.eyebrow::before{content:"";width:22px;height:2px;border-radius:2px;background:var(--honey);display:inline-block}
+.on-dark .eyebrow{color:var(--honey-2)}
+
+.btn{display:inline-flex;align-items:center;gap:.55em;font-family:var(--sans);font-weight:600;font-size:.82rem;letter-spacing:.04em;padding:15px 28px;border-radius:100px;transition:.32s cubic-bezier(.2,.7,.2,1);cursor:pointer;border:1.5px solid transparent}
+.btn-solid{background:var(--pine);color:#f2f5ef}
+.btn-solid:hover{background:var(--forest);transform:translateY(-2px);box-shadow:0 14px 30px -14px rgba(31,64,52,.6)}
+.btn-honey{background:var(--honey);color:#3a2a08}
+.btn-honey:hover{background:var(--honey-2);transform:translateY(-2px)}
+.btn-ghost{border-color:var(--pine);color:var(--pine)}
+.btn-ghost:hover{background:var(--pine);color:var(--mist)}
+.on-dark .btn-ghost{border-color:rgba(242,245,239,.5);color:var(--mist)}
+.on-dark .btn-ghost:hover{background:var(--honey);color:#3a2a08;border-color:var(--honey)}
+
+header.site{position:sticky;top:0;z-index:60;background:rgba(242,245,239,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 28px;max-width:1280px;margin:0 auto}
+.brand{display:flex;align-items:center;gap:.5em;font-family:var(--serif);font-weight:600;font-size:1.4rem;color:var(--pine)}
+.brand .leaf{width:22px;height:22px;flex:none}
+nav.main{display:flex;gap:28px;font-family:var(--sans);font-size:.85rem;font-weight:500}
+nav.main a{color:var(--ink);opacity:.8;transition:.25s}
+nav.main a:hover{opacity:1;color:var(--forest)}
+.hdr-cta{display:flex;align-items:center;gap:16px}
+.hdr-phone{font-family:var(--sans);font-size:.85rem;font-weight:600;color:var(--pine);white-space:nowrap}
+.menu-btn{display:none;background:none;border:0;color:var(--pine);cursor:pointer;padding:6px;font-size:1.2rem}
+@media(max-width:1040px){.hdr-phone{display:none}}
+
+/* hero (light) */
+.hero{background:radial-gradient(120% 100% at 100% 0%,#e6efe4,transparent 55%),var(--mist);overflow:hidden}
+.hero-inner{max-width:var(--wrap);margin:0 auto;padding:88px 28px 84px;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.9rem,6.6vw,5.2rem);color:var(--pine)}
+.hero h1 .u{position:relative;white-space:nowrap}
+.hero h1 .u::after{content:"";position:absolute;left:0;right:0;bottom:.08em;height:.14em;background:var(--honey);border-radius:4px;opacity:.85}
+.hero .lede{max-width:36ch;color:var(--muted);font-size:1.08rem;margin-top:24px}
+.hero .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px}
+.hero .meta{display:flex;gap:26px;margin-top:34px;flex-wrap:wrap;align-items:center}
+.hero .meta .stars{color:var(--honey);letter-spacing:.12em}
+.hero .meta b{font-weight:600}
+.hero .meta span{font-size:.9rem;color:var(--muted)}
+.hero-card{position:relative;aspect-ratio:4/5;border-radius:20px;overflow:hidden;box-shadow:0 40px 70px -40px rgba(31,64,52,.5)}
+.hero-card .img{position:absolute;inset:0;background:radial-gradient(80% 60% at 30% 20%,#cfe0cb,transparent 60%),radial-gradient(70% 70% at 85% 90%,#e7c777,transparent 60%),linear-gradient(160deg,#7f9b88,#2c5546 70%,#1f4034)}
+.hero-card .sprig{position:absolute;top:18px;left:18px;width:54px;opacity:.85}
+.hero-card .tag{position:absolute;left:0;right:0;bottom:0;padding:22px 24px;background:linear-gradient(0deg,rgba(24,42,34,.82),transparent);color:#eef3ec;font-family:var(--sans);font-size:.72rem;letter-spacing:.16em;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center;font-weight:500}
+.pill{position:absolute;top:16px;right:16px;background:var(--cream);color:var(--pine);font-family:var(--sans);font-weight:600;font-size:.72rem;padding:9px 14px;border-radius:100px;box-shadow:0 8px 20px -8px rgba(0,0,0,.4)}
+
+.trust{background:var(--pine);color:#dfe9df}
+.trust .row{display:flex;flex-wrap:wrap;justify-content:center;gap:12px 40px;padding:18px 28px;font-family:var(--sans);font-size:.78rem;font-weight:500;letter-spacing:.04em;max-width:var(--wrap);margin:0 auto;align-items:center}
+.trust .row span{display:flex;align-items:center;gap:.6em;opacity:.92}
+.trust .dot{width:5px;height:5px;border-radius:50%;background:var(--honey-2)}
+
+section{padding:94px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:48px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(2.1rem,4.6vw,3.4rem);max-width:15ch;color:var(--pine)}
+.sec-head p{max-width:38ch;color:var(--muted)}
+
+/* ritual steps */
+.ritual{background:var(--cream)}
+.steps{display:grid;grid-template-columns:1.25fr 1fr 1fr;gap:22px;margin-top:10px;align-items:start}
+.steps .step:nth-child(2){margin-top:34px}
+.steps .step:nth-child(3){margin-top:68px}
+.step{position:relative;padding:34px 30px;background:var(--paper);border:1px solid var(--line);border-radius:22px 22px 22px 6px;transition:.3s}
+.step:nth-child(2){border-radius:6px 22px 22px 22px}
+.step:nth-child(3){border-radius:22px 6px 22px 22px}
+.step:hover{transform:translateY(-4px);box-shadow:0 24px 44px -28px rgba(31,64,52,.5);border-color:var(--sage)}
+.step .n{font-family:var(--serif);font-size:2.6rem;color:var(--honey);line-height:1}
+.step h3{font-size:1.5rem;margin:14px 0 10px;color:var(--pine)}
+.step p{color:var(--muted);font-size:.95rem}
+
+/* services cards */
+.svc-grid{display:grid;grid-template-columns:repeat(6,1fr);gap:16px}
+.svc-grid .card:nth-child(1){grid-column:span 4;border-radius:26px}
+.svc-grid .card:nth-child(2){grid-column:span 2}
+.svc-grid .card:nth-child(3){grid-column:span 3}
+.svc-grid .card:nth-child(4){grid-column:span 3}
+.svc-grid .card:nth-child(5){grid-column:span 2}
+.svc-grid .card:nth-child(6){grid-column:span 4;border-radius:26px}
+.svc-grid .card:nth-child(1) h3,.svc-grid .card:nth-child(6) h3{font-size:1.7rem}
+.card{position:relative;background:var(--cream);border:1px solid var(--line);border-radius:20px 20px 20px 6px;padding:30px 28px;transition:.3s;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;top:0;bottom:0;width:3px;background:var(--honey);transform:scaleY(0);transform-origin:top;transition:.3s}
+.card:hover{transform:translateY(-4px);box-shadow:0 26px 46px -30px rgba(31,64,52,.55)}
+.card:hover::before{transform:scaleY(1)}
+.card h3{font-size:1.42rem;color:var(--pine);margin-bottom:8px}
+.card p{color:var(--muted);font-size:.93rem;min-height:3em}
+.card .price{margin-top:16px;font-family:var(--serif);font-weight:600;font-size:1.15rem;color:var(--clay);display:flex;align-items:baseline;gap:.4em}
+.card .price span{font-family:var(--sans);font-size:.72rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+
+/* offer band */
+.offer{background:var(--pine);color:#e9f0e7;position:relative;overflow:hidden}
+.offer::after{content:"";position:absolute;right:-60px;top:-60px;width:320px;height:320px;border-radius:50%;background:radial-gradient(circle,rgba(207,157,63,.4),transparent 70%)}
+.offer .grid{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:center}
+.offer .big{font-family:var(--serif);font-weight:600;font-size:clamp(2.6rem,6vw,4.4rem);color:var(--honey-2);line-height:1.02}
+.offer ul{list-style:none;margin:24px 0 0;padding:0;display:grid;gap:11px}
+.offer li{display:flex;gap:12px;color:#d7e2d5;font-size:.98rem}
+.offer li .ck{color:var(--honey-2);flex:none}
+.offer .card2{aspect-ratio:1/1;border-radius:20px;overflow:hidden;position:relative;border:1px solid rgba(207,157,63,.4);background:radial-gradient(70% 60% at 30% 25%,#cfe0cb,transparent 60%),linear-gradient(150deg,#a9bfae,#2c5546 65%,#173129)}
+.offer .card2 .lbl{position:absolute;bottom:0;left:0;right:0;padding:20px;background:linear-gradient(0deg,rgba(15,30,24,.8),transparent);color:#dfe9df;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500}
+
+/* reviews */
+.reviews{background:var(--mist)}
+.rev-top{display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:40px}
+.rev-score{display:flex;align-items:center;gap:16px}
+.rev-score .num{font-family:var(--serif);font-weight:600;font-size:3.2rem;color:var(--pine);line-height:1}
+.rev-score .st{color:var(--honey);font-size:1.1rem;letter-spacing:.1em}
+.rev-score .sub{font-size:.85rem;color:var(--muted)}
+.rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.rev-grid .rev:first-child{grid-column:1/-1;border-radius:26px}
+.rev-grid .rev:first-child p{font-size:1.6rem}
+.rev{background:var(--cream);border:1px solid var(--line);border-radius:20px 6px 20px 20px;padding:28px 26px}
+.rev .st{color:var(--honey);letter-spacing:.1em}
+.rev p{font-family:var(--serif);font-weight:500;font-size:1.24rem;line-height:1.42;color:var(--ink);margin:14px 0 20px}
+.rev .who{font-family:var(--sans);font-size:.8rem;font-weight:600;color:var(--forest)}
+.rev .who span{color:var(--muted);font-weight:400}
+
+/* about */
+.about .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:52px;align-items:center}
+.about .portrait{aspect-ratio:4/5;border-radius:20px;overflow:hidden;position:relative;background:radial-gradient(70% 55% at 40% 25%,#cfe0cb,transparent 60%),linear-gradient(160deg,#a9bfae,#2c5546 70%,#1f4034)}
+.about .portrait .lbl{position:absolute;bottom:0;left:0;right:0;padding:22px;background:linear-gradient(0deg,rgba(15,30,24,.82),transparent);color:#dfe9df;font-size:.68rem;letter-spacing:.2em;text-transform:uppercase;font-weight:500}
+.about h2{font-size:clamp(2rem,4vw,3rem);color:var(--pine)}
+.about blockquote{font-family:var(--serif);font-weight:500;font-size:1.55rem;line-height:1.4;margin:20px 0;color:var(--forest)}
+.creds{display:flex;gap:24px;flex-wrap:wrap;margin-top:22px}
+.cred b{font-family:var(--serif);font-weight:600;font-size:2rem;color:var(--clay);display:block;line-height:1}
+.cred span{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);font-weight:500}
+
+/* faq */
+.faq{background:var(--cream)}
+.faq .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:52px;align-items:start}
+details{border-bottom:1px solid var(--line);padding:22px 0}
+summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;gap:20px;align-items:center;font-family:var(--serif);font-weight:600;font-size:1.28rem;color:var(--pine)}
+summary::-webkit-details-marker{display:none}
+summary .ico{color:var(--honey);font-size:1.4rem;transition:.3s;flex:none}
+details[open] summary .ico{transform:rotate(45deg)}
+.ans{color:var(--muted);margin-top:12px;max-width:60ch;font-size:.97rem}
+
+/* visit */
+.visit{background:var(--pine);color:#e6efe4}
+.visit .grid{display:grid;grid-template-columns:1fr 1fr;border:1px solid rgba(207,157,63,.3);border-radius:20px;overflow:hidden}
+.visit .info{padding:50px 44px}
+.visit h2{color:#f2f5ef;font-size:2.3rem;margin-bottom:24px}
+.nap{display:grid;gap:18px}
+.nap .row{display:flex;gap:14px}
+.nap .k{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--honey-2);width:82px;flex:none;padding-top:3px;font-weight:600}
+.nap .v{color:#d7e2d5;font-size:.97rem;line-height:1.6}
+.nap .v b{color:#f2f5ef;font-weight:600}
+.map{position:relative;min-height:340px;background:linear-gradient(rgba(207,157,63,.08),rgba(207,157,63,.08)),repeating-linear-gradient(0deg,#22463a 0 38px,#1e4034 38px 39px),repeating-linear-gradient(90deg,#22463a 0 38px,#1e4034 38px 39px)}
+.map::after{content:"";position:absolute;top:50%;left:50%;width:16px;height:16px;transform:translate(-50%,-50%);border-radius:50% 50% 50% 0;rotate:-45deg;background:var(--honey);box-shadow:0 0 0 6px rgba(207,157,63,.25)}
+.map .plabel{position:absolute;top:18px;left:18px;font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:#cde;opacity:.7;font-weight:600}
+
+/* book */
+.book{background:radial-gradient(120% 90% at 50% 0%,#e7efe4,transparent 55%),var(--mist);padding-bottom:110px}
+.book .inner{text-align:center;max-width:640px;margin:0 auto}
+.book h2{font-size:clamp(2.3rem,5.4vw,3.8rem);color:var(--pine)}
+.book p{color:var(--muted);margin:18px auto 0;max-width:46ch}
+.bform{margin-top:36px;display:grid;grid-template-columns:1fr 1fr;gap:14px;text-align:left}
+.bform .full{grid-column:1/-1}
+.bform label{display:block;font-family:var(--sans);font-size:.68rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--forest);margin-bottom:7px}
+.bform input,.bform select{width:100%;background:var(--cream);border:1.5px solid var(--line);color:var(--ink);padding:14px 16px;border-radius:12px;font-family:var(--sans);font-size:.95rem}
+.bform input:focus,.bform select:focus{outline:2px solid var(--honey);outline-offset:1px;border-color:transparent}
+.bform button{grid-column:1/-1;justify-content:center;margin-top:6px}
+.bnote{grid-column:1/-1;text-align:center;font-size:.78rem;color:var(--muted)}
+.formmsg{grid-column:1/-1;text-align:center;font-family:var(--serif);font-weight:600;font-size:1.2rem;color:var(--forest);padding:8px;display:none}
+
+footer.site{background:var(--pine);color:#cdd9cd;padding:58px 0 38px;font-family:var(--sans)}
+footer .grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:36px;border-bottom:1px solid rgba(207,157,63,.2)}
+footer .brand{color:#f2f5ef;margin-bottom:12px}
+footer h4{font-size:.68rem;letter-spacing:.18em;text-transform:uppercase;color:var(--honey-2);margin:0 0 14px;font-weight:600}
+footer a,footer li{color:#cdd9cd;opacity:.9;font-size:.92rem;line-height:2}
+footer ul{list-style:none;margin:0;padding:0}
+footer .fine{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:22px;font-size:.76rem;opacity:.6}
+
+.concept{position:fixed;bottom:14px;left:14px;z-index:80;background:rgba(31,64,52,.92);color:var(--honey-2);border:1px solid rgba(207,157,63,.4);border-radius:100px;padding:8px 15px;font-family:var(--sans);font-size:.66rem;font-weight:500;letter-spacing:.1em;text-transform:uppercase;backdrop-filter:blur(6px)}
+.concept b{color:#f2f5ef}
+
+.reveal{}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--honey);outline-offset:2px;border-radius:3px}
+@keyframes riseIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.hero-inner>div:first-child>*,.hero-inner>.eyebrow,.hero-inner>h1,.hero-inner>.lede,.hero-inner>.tagline,.hero-inner>.cta-row,.hero-card{animation:riseIn .7s cubic-bezier(.2,.7,.2,1) both}
+.hero-inner>div:first-child>*:nth-child(2),.hero-inner>h1{animation-delay:.07s}
+.hero-inner>div:first-child>*:nth-child(3),.hero-inner>.lede{animation-delay:.14s}
+.hero-inner>div:first-child>*:nth-child(4),.hero-inner>.tagline{animation-delay:.2s}
+.hero-inner>div:first-child>*:nth-child(5),.hero-inner>.cta-row{animation-delay:.27s}
+.hero-card{animation-delay:.18s}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:900px){
+  nav.main{display:none}.menu-btn{display:block}
+  .hero-inner,.offer .grid,.about .grid,.faq .grid,.visit .grid{grid-template-columns:1fr}
+  .hero-card{max-width:360px}
+  .steps,.svc-grid,.rev-grid{grid-template-columns:1fr 1fr}.svc-grid .card,.steps .step{grid-column:auto;margin-top:0}
+  section{padding:70px 0}
+}
+@media(max-width:600px){.steps,.svc-grid,.rev-grid,.bform{grid-template-columns:1fr}.hero-inner{padding:60px 22px}.concept{font-size:.6rem}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="#top"><svg class="leaf" viewBox="0 0 24 24" fill="none"><path d="M12 21c0-6 3-11 9-14-1 7-4 11-9 14Z" fill="#7f9b88"/><path d="M12 21c0-6-3-11-9-14 1 7 4 11 9 14Z" fill="#2c5546"/><path d="M12 21V9" stroke="#cf9d3f" stroke-width="1.4" stroke-linecap="round"/></svg>Sage &amp; Sol</a>
+    <nav class="main">
+      <a href="#services">Treatments</a>
+      <a href="#ritual">Your Ritual</a>
+      <a href="#about">Our Team</a>
+      <a href="#faq">FAQ</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="hdr-cta">
+      <span class="hdr-phone">(512) 555-0148</span>
+      <a href="#book" class="btn btn-solid">Book Now</a>
+    </div>
+    <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('nav.main').scrollIntoView()">☰</button>
+  </div>
+</header>
+<main>
+
+<a id="top"></a>
+<section class="hero" style="padding:0">
+  <div class="hero-inner">
+    <div>
+      <span class="eyebrow">South Austin · Skin &amp; IV Wellness</span>
+      <h1 style="margin-top:18px">Skin health, not skin <span class="u">perfection.</span></h1>
+      <p class="lede">Medical-grade facials, peels and vitamin drips that treat your skin like the living organ it is, so your glow lasts long after you leave the studio.</p>
+      <div class="cta-row">
+        <a href="#book" class="btn btn-honey">Book Your Glow →</a>
+        <a href="#services" class="btn btn-ghost">See Treatments</a>
+      </div>
+      <div class="meta">
+        <span><span class="stars">★★★★★</span> <b>4.9</b> · 340+ reviews</span>
+        <span>Licensed medical estheticians</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="img"></div>
+      <svg class="sprig" viewBox="0 0 40 60" fill="none"><path d="M20 58V10" stroke="#eef3ec" stroke-width="1.6" stroke-linecap="round"/><path d="M20 20c-6-2-11-6-13-12 7 1 11 4 13 12Zm0 12c6-2 11-6 13-12-7 1-11 4-13 12Zm0 10c-5-2-9-5-11-10 6 1 9 3 11 10Z" fill="#eef3ec" opacity=".9"/></svg>
+      <div class="pill">✦ New Guest Facial $99</div>
+      <div class="tag"><span>HydraFacial + LED</span><span>60 min</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="row">
+    <span><span class="dot"></span>Medical-Grade Only</span>
+    <span><span class="dot"></span>Licensed Estheticians</span>
+    <span><span class="dot"></span>Registered Nurse On-Site</span>
+    <span><span class="dot"></span>Clean, Cruelty-Free Products</span>
+    <span><span class="dot"></span>Membership Perks</span>
+  </div>
+</div>
+
+<section id="ritual" class="ritual">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">The Sage &amp; Sol Ritual</span><h2 style="margin-top:16px">Three steps to skin that actually behaves.</h2></div>
+      <p>Every guest follows the same considered path, because lasting results come from a plan, not a one-off treatment.</p>
+    </div>
+    <div class="steps">
+      <div class="step reveal"><div class="n">1</div><h3>Skin Analysis</h3><p>A licensed esthetician reads your skin under magnification and maps a plan to your goals, budget and lifestyle.</p></div>
+      <div class="step reveal"><div class="n">2</div><h3>Your Treatment</h3><p>Relax into a facial, peel, microneedling or IV drip tailored to what your skin needs today, never a template.</p></div>
+      <div class="step reveal"><div class="n">3</div><h3>Home Ritual</h3><p>Leave with a simple, medical-grade routine and a follow-up cadence so your glow compounds week over week.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">Treatments &amp; Drips</span><h2 style="margin-top:16px">Book by result, not by buzzword.</h2></div>
+      <p>Transparent, all-in pricing. Memberships bring every service down and roll unused visits forward.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="card reveal">
+        <h3>Signature HydraFacial</h3><p>Cleanse, exfoliate, extract and hydrate, plus LED. Zero downtime, instant glow.</p>
+        <div class="price">$199 <span>60 min</span></div>
+      </div>
+      <div class="card reveal">
+        <h3>Custom Medical Facial</h3><p>Fully tailored to your skin that day: acne, texture, dullness or sensitivity.</p>
+        <div class="price">$149 <span>50 min</span></div>
+      </div>
+      <div class="card reveal">
+        <h3>Chemical Peels</h3><p>Medical-grade resurfacing for tone, sun damage and fine lines. Glow with a plan.</p>
+        <div class="price">$175 <span>45 min</span></div>
+      </div>
+      <div class="card reveal">
+        <h3>Microneedling + Growth Factors</h3><p>Stimulate collagen for scars, pores and firmness. A patient favorite in Austin.</p>
+        <div class="price">$299 <span>60 min</span></div>
+      </div>
+      <div class="card reveal">
+        <h3>Vitamin IV Drip Therapy</h3><p>Hydration, immunity, glow and recovery blends, dosed by our RN.</p>
+        <div class="price">$149 <span>45 min</span></div>
+      </div>
+      <div class="card reveal">
+        <h3>Dermaplaning + Glow</h3><p>Smooth, brighten and prep skin for flawless makeup and better product absorption.</p>
+        <div class="price">$120 <span>40 min</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="offer">
+  <div class="wrap">
+    <div class="grid reveal">
+      <div>
+        <span class="eyebrow">New Guest Ritual</span>
+        <div class="big" style="margin-top:16px">Your first facial,<br>just $99.</div>
+        <p style="color:#d7e2d5;margin-top:14px;max-width:42ch">A full 60-minute customized facial with a licensed esthetician and a personalized skin plan, a $149 value, yours the first visit.</p>
+        <ul>
+          <li><span class="ck">✓</span> Full skin analysis &amp; written plan</li>
+          <li><span class="ck">✓</span> 60-minute customized facial + LED</li>
+          <li><span class="ck">✓</span> $50 credit toward any membership</li>
+          <li><span class="ck">✓</span> No packages pushed, ever</li>
+        </ul>
+        <div class="cta-row" style="margin-top:28px"><a href="#book" class="btn btn-honey">Claim $99 Facial →</a></div>
+      </div>
+      <div class="card2"><div class="lbl">◐ Client photography · treatment room &amp; glow</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews">
+  <div class="wrap">
+    <div class="rev-top reveal">
+      <div>
+        <span class="eyebrow">Loved Across Austin</span>
+        <h2 style="margin-top:14px;font-size:clamp(2rem,4.4vw,3rem);color:var(--pine)">Skin they can feel, reviews you can trust.</h2>
+      </div>
+      <div class="rev-score"><div class="num">4.9</div><div><div class="st">★★★★★</div><div class="sub">340+ Google reviews</div></div></div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev reveal"><div class="st">★★★★★</div><p>"My cystic acne is finally calm. They actually built a plan instead of upselling me a package I didn't need."</p><div class="who">Jordan M. <span>· South Congress</span></div></div>
+      <div class="rev reveal"><div class="st">★★★★★</div><p>"The IV drip after a Barton Springs run is my new ritual. Front desk to esthetician, everyone's lovely."</p><div class="who">Camila S. <span>· East Austin</span></div></div>
+      <div class="rev reveal"><div class="st">★★★★★</div><p>"Best facial in Austin, hands down. My skin looked lit-from-within for my wedding. Worth every penny."</p><div class="who">Rebecca T. <span>· Westlake</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <div class="grid">
+      <div class="reveal">
+        <span class="eyebrow">Founder &amp; Lead Esthetician</span>
+        <h2 style="margin-top:14px">Maya Okonkwo, LE</h2>
+        <blockquote>"Great skin isn't a filter. It's a habit. My job is to build you one you'll actually keep."</blockquote>
+        <p style="color:var(--muted)">A licensed medical esthetician with 12 years of clinical experience, Maya opened Sage &amp; Sol to bring evidence-based, no-nonsense skin care to South Austin, pairing hands-on treatments with a registered nurse for safe, effective drips and advanced modalities.</p>
+        <div class="creds">
+          <div class="cred"><b>12 yrs</b><span>Clinical Esthetics</span></div>
+          <div class="cred"><b>15k+</b><span>Treatments Given</span></div>
+          <div class="cred"><b>RN</b><span>On-Site for Drips</span></div>
+        </div>
+      </div>
+      <div class="portrait reveal"><div class="lbl">◐ Founder portrait · client photography</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="wrap">
+    <div class="grid">
+      <div class="reveal"><span class="eyebrow">Before You Book</span><h2 style="margin-top:14px;font-size:clamp(2rem,4vw,3rem);color:var(--pine)">The questions we hear most.</h2><p style="color:var(--muted);margin-top:16px">Not sure where to start? Book the $99 new-guest facial and we'll map everything out together.</p></div>
+      <div class="reveal">
+        <details open><summary>Which facial is right for me? <span class="ico">+</span></summary><div class="ans">That's exactly what your skin analysis is for. Most first-timers start with our Custom Medical Facial or the $99 new-guest facial, then we build a plan from there, with no guesswork.</div></details>
+        <details><summary>How much is a HydraFacial in Austin? <span class="ico">+</span></summary><div class="ans">Our Signature HydraFacial with LED is $199 for 60 minutes, all-in. Members pay less, and unused member visits roll forward so nothing is wasted.</div></details>
+        <details><summary>Are the IV drips safe? <span class="ico">+</span></summary><div class="ans">Yes. Every drip is reviewed and administered by our registered nurse after a brief health screening, using sterile, single-use kits.</div></details>
+        <details><summary>Do you offer memberships? <span class="ico">+</span></summary><div class="ans">We do. A monthly membership includes a treatment credit, member pricing on everything, and roll-over visits. It's the best value for skin that keeps improving.</div></details>
+        <details><summary>Where are you located? <span class="ico">+</span></summary><div class="ans">We're in South Austin at 1901 S Lamar Blvd, Suite 4, with easy parking. We serve South Congress, East Austin, Westlake and the greater Austin area.</div></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visit" class="visit">
+  <div class="wrap">
+    <div class="grid">
+      <div class="info">
+        <h2>Come see us</h2>
+        <div class="nap">
+          <div class="row"><div class="k">Address</div><div class="v"><b>Sage &amp; Sol Skin + Wellness</b><br>1901 S Lamar Blvd, Suite 4<br>Austin, TX 78704</div></div>
+          <div class="row"><div class="k">Phone</div><div class="v"><b>(512) 555-0148</b></div></div>
+          <div class="row"><div class="k">Hours</div><div class="v">Tue-Fri · 10am to 7pm<br>Saturday · 9am to 5pm<br>Sun-Mon · Closed</div></div>
+          <div class="row"><div class="k">Parking</div><div class="v">Free lot behind the building · steps from South Lamar</div></div>
+        </div>
+        <div class="cta-row" style="margin-top:32px"><a href="#book" class="btn btn-honey">Book a Visit</a></div>
+      </div>
+      <div class="map" role="img" aria-label="Map of Sage &amp; Sol in South Austin"><span class="plabel">South Lamar · 78704</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="book" class="book">
+  <div class="wrap">
+    <div class="inner">
+      <span class="eyebrow" style="justify-content:center">Book Your Glow</span>
+      <h2 style="margin-top:16px">Your skin's best era starts here.</h2>
+      <p>Tell us what you're after and we'll text you to confirm within one business hour.</p>
+      <form class="bform" onsubmit="return ssSubmit(event)">
+        <!-- GHL calendar / form embed slot -->
+        <div><label for="f_name">First name</label><input id="f_name" required placeholder="Maya" autocomplete="given-name"></div>
+        <div><label for="f_phone">Phone</label><input id="f_phone" required type="tel" placeholder="(512) 555-0000" autocomplete="tel"></div>
+        <div class="full"><label for="f_svc">What brings you in?</label>
+          <select id="f_svc"><option>$99 New Guest Facial</option><option>HydraFacial</option><option>Chemical peel</option><option>Microneedling</option><option>IV drip therapy</option><option>Not sure yet, help me choose</option></select>
+        </div>
+        <button class="btn btn-solid" type="submit">Request My Appointment →</button>
+        <div class="bnote">By requesting, you agree to be contacted about your appointment.</div>
+        <div class="formmsg" id="ssMsg">Thank you! This is a concept demo. On a live build this connects to your Go High Level calendar and texts the guest a confirmation.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <div class="brand" style="font-family:var(--serif);font-weight:600;font-size:1.5rem">Sage &amp; Sol</div>
+        <p style="max-width:34ch;opacity:.85">Skin-health facials and IV wellness in South Austin. Real results, no upsell.</p>
+      </div>
+      <div><h4>Treatments</h4><ul><li><a href="#services">HydraFacial</a></li><li><a href="#services">Medical Facials</a></li><li><a href="#services">Chemical Peels</a></li><li><a href="#services">IV Drip Therapy</a></li></ul></div>
+      <div><h4>Studio</h4><ul><li>1901 S Lamar Blvd #4</li><li>Austin, TX 78704</li><li><a href="tel:+15125550148">(512) 555-0148</a></li><li>Tue-Sat by appointment</li></ul></div>
+    </div>
+    <div class="fine"><span>© 2026 Sage &amp; Sol Skin + Wellness</span><span>Individual results vary · Not medical advice</span></div>
+  </div>
+</footer>
+
+<div class="concept">Concept site · portfolio demo by <b>Santiago Ambricca</b></div>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":["MedicalBusiness","HealthAndBeautyBusiness"],
+  "name":"Sage & Sol Skin + Wellness",
+  "description":"Medical spa in South Austin offering HydraFacial, custom medical facials, chemical peels, microneedling and vitamin IV drip therapy.",
+  "url":"https://sageandsolwellness.example/",
+  "telephone":"+1-512-555-0148",
+  "priceRange":"$$",
+  "image":"https://sageandsolwellness.example/og.jpg",
+  "address":{"@type":"PostalAddress","streetAddress":"1901 S Lamar Blvd, Suite 4","addressLocality":"Austin","addressRegion":"TX","postalCode":"78704","addressCountry":"US"},
+  "geo":{"@type":"GeoCoordinates","latitude":30.2510,"longitude":-97.7690},
+  "areaServed":["Austin","South Congress","East Austin","Westlake"],
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"19:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"09:00","closes":"17:00"}
+  ],
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"341"},
+  "hasOfferCatalog":{"@type":"OfferCatalog","name":"Skin & Wellness Services","itemListElement":[
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Signature HydraFacial"},"price":"199","priceCurrency":"USD"},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Custom Medical Facial"},"price":"149","priceCurrency":"USD"},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Vitamin IV Drip Therapy"},"price":"149","priceCurrency":"USD"}
+  ]}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org","@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Which facial is right for me?","acceptedAnswer":{"@type":"Answer","text":"Your skin analysis determines the right facial. Most first-timers start with the Custom Medical Facial or the $99 new-guest facial, then follow a personalized plan."}},
+    {"@type":"Question","name":"How much is a HydraFacial in Austin?","acceptedAnswer":{"@type":"Answer","text":"Our Signature HydraFacial with LED is $199 for 60 minutes, all-in. Members pay less and unused visits roll forward."}},
+    {"@type":"Question","name":"Are the IV drips safe?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every drip is reviewed and administered by our registered nurse after a health screening, using sterile single-use kits."}},
+    {"@type":"Question","name":"Do you offer memberships?","acceptedAnswer":{"@type":"Answer","text":"Yes. Monthly membership includes a treatment credit, member pricing and roll-over visits."}}
+  ]
+}
+</script>
+<script>
+function ssSubmit(e){e.preventDefault();document.getElementById('ssMsg').style.display='block';e.target.querySelector('button').textContent='Request received ✓';return false;}
+
+</script>
+</body>
+</html>

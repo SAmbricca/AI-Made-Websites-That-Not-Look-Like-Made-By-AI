@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lumière Aesthetic Studio | Botox, Filler &amp; Injectables in Scottsdale, AZ</title>
+<meta name="description" content="Lumière Aesthetic Studio is a boutique injectable clinic in Scottsdale, AZ. Natural-looking Botox, dermal filler, lip enhancement and skin boosters by expert nurse injectors. Book your complimentary consultation.">
+<meta name="theme-color" content="#241820">
+<link rel="canonical" href="https://lumiereaesthetic.example/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lumière Aesthetic Studio | Injectables in Scottsdale">
+<meta property="og:description" content="Refined, natural-looking injectables by expert nurse injectors in Old Town Scottsdale.">
+<meta property="og:locale" content="en_US">
+<style>
+/*__FONTS__*/
+:root{
+  --ivory:#f5eee9; --ivory-2:#efe4dc; --ink:#241820; --plum:#3c2233; --wine:#5a3346;
+  --gold:#b08d57; --gold-2:#caa66f; --rose:#e7d3cb; --mauve:#8a6274;
+  --paper:#fbf7f4; --line:rgba(36,24,32,.14); --line-gold:rgba(176,141,87,.45);
+  --muted:#6d5a63;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Jost',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--ivory);color:var(--ink);
+  font-family:var(--sans);font-weight:400;font-size:17px;line-height:1.65;
+  -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
+  overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:var(--serif);font-weight:500;margin:0;text-wrap:balance;letter-spacing:.005em}
+p{margin:0}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:0 28px}
+.eyebrow{font-family:var(--sans);font-weight:500;font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:.7em}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--gold);display:inline-block;opacity:.8}
+.rule{height:1px;background:var(--line-gold);border:0;margin:0}
+
+/* buttons */
+.btn{display:inline-flex;align-items:center;gap:.6em;font-family:var(--sans);font-weight:500;font-size:.82rem;letter-spacing:.16em;text-transform:uppercase;padding:15px 30px;border-radius:2px;transition:.35s cubic-bezier(.2,.7,.2,1);cursor:pointer;border:1px solid transparent;white-space:nowrap}
+.btn-solid{background:var(--gold);color:#2a1f14}
+.btn-solid:hover{background:var(--gold-2);transform:translateY(-2px)}
+.btn-ghost{border-color:currentColor;color:var(--ink)}
+.btn-ghost:hover{background:var(--ink);color:var(--ivory);border-color:var(--ink)}
+.on-dark .btn-ghost{color:var(--ivory)}
+.on-dark .btn-ghost:hover{background:var(--gold);color:#2a1f14;border-color:var(--gold)}
+
+/* header */
+header.site{position:sticky;top:0;z-index:60;background:rgba(36,24,32,.86);backdrop-filter:blur(10px);border-bottom:1px solid rgba(176,141,87,.22);color:var(--ivory)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:14px 28px;max-width:1280px;margin:0 auto}
+.brand{display:flex;align-items:baseline;gap:.5em;font-family:var(--serif);font-size:1.5rem;letter-spacing:.02em;color:var(--ivory)}
+.brand small{font-family:var(--sans);font-size:.58rem;letter-spacing:.34em;text-transform:uppercase;color:var(--gold-2);font-weight:400}
+nav.main{display:flex;gap:30px;font-family:var(--sans);font-size:.78rem;letter-spacing:.14em;text-transform:uppercase}
+nav.main a{color:var(--rose);opacity:.85;transition:.25s}
+nav.main a:hover{opacity:1;color:var(--gold-2)}
+.hdr-cta{display:flex;align-items:center;gap:18px}
+.hdr-phone{font-family:var(--sans);font-size:.82rem;letter-spacing:.05em;color:var(--rose);display:flex;align-items:center;gap:.5em;white-space:nowrap}
+@media(max-width:1040px){.hdr-phone{display:none}}
+.hdr-phone b{color:var(--ivory);font-weight:500}
+.menu-btn{display:none;background:none;border:0;color:var(--ivory);cursor:pointer;padding:6px}
+
+/* hero */
+.hero{position:relative;background:var(--ink);color:var(--ivory);overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(120% 90% at 82% 18%, rgba(176,141,87,.34), transparent 55%),
+  radial-gradient(90% 80% at 8% 92%, rgba(138,98,116,.4), transparent 60%),
+  linear-gradient(160deg,#2c1c27,#241820 60%,#1c1219);}
+.hero::after{content:"";position:absolute;inset:0;opacity:.5;mix-blend-mode:overlay;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.5'/%3E%3C/svg%3E")}
+.hero-inner{position:relative;z-index:2;max-width:var(--wrap);margin:0 auto;padding:96px 28px 88px;display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(3rem,7vw,5.6rem);line-height:1.02;font-weight:500;letter-spacing:-.01em}
+.hero h1 em{font-style:italic;color:var(--gold-2)}
+.hero .lede{max-width:34ch;color:var(--rose);font-size:1.06rem;margin-top:26px;line-height:1.7}
+.hero .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-top:34px}
+.hero .stars{display:flex;align-items:center;gap:12px;margin-top:30px;font-family:var(--sans);font-size:.82rem;letter-spacing:.04em;color:var(--rose)}
+.stars .s{color:var(--gold-2);letter-spacing:.15em;font-size:.95rem}
+.hero-card{position:relative;aspect-ratio:4/5;border-radius:3px;border:1px solid rgba(202,166,111,.5);overflow:hidden;box-shadow:0 40px 80px -40px rgba(0,0,0,.7)}
+.hero-card .img{position:absolute;inset:0;background:
+  radial-gradient(80% 60% at 70% 22%, rgba(231,211,203,.9), transparent 60%),
+  radial-gradient(70% 70% at 22% 82%, rgba(138,98,116,.85), transparent 62%),
+  linear-gradient(150deg,#e7d3cb,#c9a6a0 45%,#7d5266);}
+.hero-card .tag{position:absolute;left:0;bottom:0;right:0;padding:22px 24px;background:linear-gradient(0deg,rgba(28,18,25,.86),transparent);font-family:var(--sans);font-size:.68rem;letter-spacing:.28em;text-transform:uppercase;color:var(--rose);display:flex;justify-content:space-between;align-items:center}
+.hero-card .badge{position:absolute;top:18px;right:18px;width:74px;height:74px;border-radius:50%;border:1px solid var(--gold-2);display:grid;place-items:center;text-align:center;font-family:var(--serif);font-size:.9rem;color:var(--gold-2);background:rgba(28,18,25,.4);line-height:1.05}
+.badge span{font-family:var(--sans);font-size:.5rem;letter-spacing:.2em;text-transform:uppercase;display:block}
+
+/* marquee / trust */
+.trust{background:var(--plum);color:var(--rose)}
+.trust .row{display:flex;flex-wrap:wrap;justify-content:center;gap:14px 44px;padding:20px 28px;font-family:var(--sans);font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;max-width:var(--wrap);margin:0 auto;align-items:center}
+.trust .row span{display:flex;align-items:center;gap:.7em;opacity:.9}
+.trust .dot{width:5px;height:5px;border-radius:50%;background:var(--gold)}
+
+/* generic section */
+section{padding:96px 0}
+.sec-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:52px;flex-wrap:wrap}
+.sec-head h2{font-size:clamp(2.1rem,4.4vw,3.3rem);line-height:1.05;max-width:16ch}
+.sec-head p{max-width:38ch;color:var(--muted)}
+
+/* offer */
+.offer{background:var(--ink);color:var(--ivory);position:relative;overflow:hidden}
+.offer::before{content:"";position:absolute;inset:0;background:radial-gradient(80% 120% at 90% 10%,rgba(176,141,87,.28),transparent 55%)}
+.offer .grid{position:relative;display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.offer .price{font-family:var(--serif);font-size:clamp(3.4rem,8vw,5.6rem);color:var(--gold-2);line-height:1}
+.offer .price s{color:var(--mauve);font-size:.4em;margin-left:.4em}
+.offer ul{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:12px}
+.offer li{display:flex;gap:12px;color:var(--rose);font-size:.98rem}
+.offer li::before{content:"";width:6px;height:6px;flex:none;margin-top:.55em;background:var(--gold-2);transform:rotate(45deg)}
+.offer .panel{aspect-ratio:1/1;border:1px solid var(--line-gold);border-radius:3px;position:relative;overflow:hidden;background:
+  radial-gradient(70% 60% at 30% 25%,rgba(231,211,203,.9),transparent 60%),
+  linear-gradient(150deg,#caa66f,#8a6274 60%,#3c2233)}
+.offer .panel .lbl{position:absolute;bottom:0;left:0;right:0;padding:20px;font-family:var(--sans);font-size:.66rem;letter-spacing:.26em;text-transform:uppercase;background:linear-gradient(0deg,rgba(28,18,25,.8),transparent);color:var(--rose)}
+
+/* services */
+.svc-list{display:grid;gap:0;border-top:1px solid var(--line)}
+.svc{display:grid;grid-template-columns:auto 1fr auto auto;gap:28px;align-items:center;padding:26px 8px;border-bottom:1px solid var(--line);transition:.3s;position:relative}
+.svc:hover{background:var(--paper);padding-left:22px}
+.svc .no{font-family:var(--sans);font-size:.72rem;letter-spacing:.1em;color:var(--gold);width:2.4em}
+.svc h3{font-size:1.7rem;font-weight:500}
+.svc .desc{color:var(--muted);font-size:.92rem;max-width:44ch}
+.svc .price{font-family:var(--serif);font-size:1.5rem;color:var(--wine);white-space:nowrap}
+.svc .arw{color:var(--gold);font-family:var(--sans);font-size:1.1rem;opacity:0;transform:translateX(-6px);transition:.3s}
+.svc:hover .arw{opacity:1;transform:none}
+
+/* results / gallery */
+.results{background:var(--ivory-2)}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
+.gal .frame:nth-child(1){aspect-ratio:3/4.2}
+.gal .frame:nth-child(2){aspect-ratio:3/3.5;margin-top:44px}
+.gal .frame:nth-child(3){aspect-ratio:3/3.9}
+.frame{position:relative;aspect-ratio:3/4;border-radius:3px;overflow:hidden;border:1px solid var(--line-gold)}
+.frame .ph{position:absolute;inset:0}
+.f1 .ph{background:radial-gradient(70% 60% at 60% 30%,rgba(231,211,203,.95),transparent 60%),linear-gradient(160deg,#e7d3cb,#b98f89 60%,#6b3f52)}
+.f2 .ph{background:radial-gradient(70% 60% at 40% 30%,rgba(202,166,111,.7),transparent 60%),linear-gradient(160deg,#d8c3b5,#a98a5b 60%,#3c2233)}
+.f3 .ph{background:radial-gradient(70% 60% at 55% 25%,rgba(231,211,203,.95),transparent 60%),linear-gradient(160deg,#efe4dc,#c9a6a0 55%,#8a6274)}
+.frame .cap{position:absolute;left:0;right:0;bottom:0;padding:18px;font-family:var(--sans);font-size:.66rem;letter-spacing:.24em;text-transform:uppercase;color:var(--rose);background:linear-gradient(0deg,rgba(28,18,25,.8),transparent);display:flex;justify-content:space-between}
+
+/* reviews */
+.reviews{background:var(--ink);color:var(--ivory)}
+.rev-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+.rev-grid .rev:first-child{grid-column:1/-1}
+.rev-grid .rev:first-child p{font-size:1.7rem}
+.rev{border:1px solid rgba(176,141,87,.28);border-radius:3px;padding:30px 26px;background:linear-gradient(180deg,rgba(60,34,51,.5),transparent)}
+.rev .s{color:var(--gold-2);letter-spacing:.14em;font-size:.95rem}
+.rev p{font-family:var(--serif);font-size:1.32rem;line-height:1.45;color:var(--ivory);margin:16px 0 22px}
+.rev .who{font-family:var(--sans);font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--rose)}
+.rev-head{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:48px;gap:14px}
+.rev-head .big{font-family:var(--serif);font-size:3rem;color:var(--gold-2);line-height:1;display:flex;align-items:baseline;gap:.3em}
+.rev-head .big small{font-family:var(--sans);font-size:.9rem;letter-spacing:.16em;text-transform:uppercase;color:var(--rose)}
+
+/* provider / about */
+.about .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center}
+.about .portrait{aspect-ratio:4/5;border-radius:3px;border:1px solid var(--line-gold);position:relative;overflow:hidden;background:radial-gradient(70% 55% at 60% 26%,rgba(231,211,203,.95),transparent 60%),linear-gradient(160deg,#e7d3cb,#a98a5b 65%,#3c2233)}
+.about .portrait .lbl{position:absolute;bottom:0;left:0;right:0;padding:22px;background:linear-gradient(0deg,rgba(28,18,25,.82),transparent);color:var(--rose);font-family:var(--sans);font-size:.68rem;letter-spacing:.24em;text-transform:uppercase}
+.about h2{font-size:clamp(2rem,4vw,3rem)}
+.about blockquote{font-family:var(--serif);font-size:1.6rem;line-height:1.4;margin:22px 0;color:var(--wine)}
+.creds{display:flex;gap:26px;flex-wrap:wrap;margin-top:26px}
+.cred{border-left:1px solid var(--line-gold);padding-left:16px}
+.cred b{font-family:var(--serif);font-size:2rem;color:var(--wine);display:block;line-height:1}
+.cred span{font-family:var(--sans);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+
+/* faq */
+.faq{background:var(--paper)}
+.faq .grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+details{border-bottom:1px solid var(--line);padding:22px 0}
+details summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;font-family:var(--serif);font-size:1.4rem;color:var(--ink)}
+details summary::-webkit-details-marker{display:none}
+details summary .ico{font-family:var(--sans);color:var(--gold);font-size:1.4rem;transition:.3s;flex:none}
+details[open] summary .ico{transform:rotate(45deg)}
+details .ans{color:var(--muted);margin-top:14px;max-width:60ch;font-size:.98rem}
+
+/* visit */
+.visit{background:var(--ink);color:var(--ivory)}
+.visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid rgba(176,141,87,.3);border-radius:3px;overflow:hidden}
+.visit .info{padding:52px 46px}
+.visit .info h2{font-size:2.4rem;color:var(--ivory);margin-bottom:26px}
+.nap{display:grid;gap:20px;font-family:var(--sans)}
+.nap .row{display:flex;gap:14px;align-items:flex-start}
+.nap .k{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-2);width:88px;flex:none;padding-top:3px}
+.nap .v{color:var(--rose);font-size:.98rem;line-height:1.6}
+.nap .v b{color:var(--ivory);font-weight:500}
+.map{position:relative;min-height:340px;background:
+  linear-gradient(rgba(176,141,87,.12),rgba(176,141,87,.12)),
+  repeating-linear-gradient(0deg,#2c1c27 0 38px,#281925 38px 39px),
+  repeating-linear-gradient(90deg,#2c1c27 0 38px,#281925 38px 39px)}
+.map::after{content:"";position:absolute;top:50%;left:50%;width:16px;height:16px;transform:translate(-50%,-50%);border-radius:50% 50% 50% 0;rotate:-45deg;background:var(--gold);box-shadow:0 0 0 6px rgba(176,141,87,.28)}
+.map .plabel{position:absolute;top:18px;left:18px;font-family:var(--sans);font-size:.64rem;letter-spacing:.24em;text-transform:uppercase;color:var(--rose);opacity:.75}
+
+/* booking CTA */
+.book{background:var(--ink);color:var(--ivory);position:relative;overflow:hidden;padding-bottom:110px}
+.book::before{content:"";position:absolute;inset:0;background:radial-gradient(70% 90% at 50% 0%,rgba(138,98,116,.42),transparent 55%)}
+.book .inner{position:relative;text-align:center;max-width:640px;margin:0 auto}
+.book h2{font-size:clamp(2.4rem,6vw,4rem);line-height:1.05}
+.book p{color:var(--rose);margin:20px auto 0;max-width:46ch}
+.bform{margin-top:40px;display:grid;grid-template-columns:1fr 1fr;gap:14px;text-align:left}
+.bform .full{grid-column:1/-1}
+.bform label{display:block;font-family:var(--sans);font-size:.64rem;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-2);margin-bottom:8px}
+.bform input,.bform select{width:100%;background:rgba(245,238,233,.05);border:1px solid rgba(176,141,87,.35);color:var(--ivory);padding:14px 16px;border-radius:2px;font-family:var(--sans);font-size:.95rem}
+.bform input::placeholder{color:rgba(231,211,203,.72)}
+.bform input:focus,.bform select:focus{outline:2px solid var(--gold-2);outline-offset:1px;border-color:transparent}
+.bform button{grid-column:1/-1;justify-content:center;margin-top:6px}
+.bnote{grid-column:1/-1;font-family:var(--sans);font-size:.74rem;color:var(--rose);opacity:.7;text-align:center}
+.formmsg{grid-column:1/-1;text-align:center;font-family:var(--serif);font-size:1.3rem;color:var(--gold-2);padding:10px;display:none}
+
+/* footer */
+footer.site{background:#1b1119;color:var(--rose);padding:60px 0 40px;font-family:var(--sans)}
+footer .grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;padding-bottom:40px;border-bottom:1px solid rgba(176,141,87,.2)}
+footer .brand{color:var(--ivory);margin-bottom:14px}
+footer h4{font-size:.68rem;letter-spacing:.24em;text-transform:uppercase;color:var(--gold-2);margin:0 0 16px;font-weight:500}
+footer a,footer li{color:var(--rose);opacity:.85;font-size:.92rem;line-height:2}
+footer ul{list-style:none;margin:0;padding:0}
+footer .fine{display:flex;justify-content:space-between;flex-wrap:wrap;gap:12px;padding-top:24px;font-size:.76rem;opacity:.6}
+
+/* concept ribbon */
+.concept{position:fixed;bottom:14px;left:14px;z-index:80;background:rgba(27,17,25,.9);color:var(--gold-2);border:1px solid rgba(176,141,87,.4);border-radius:100px;padding:8px 15px;font-family:var(--sans);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;backdrop-filter:blur(6px)}
+.concept b{color:var(--ivory);font-weight:500}
+
+.reveal{}
+a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid var(--gold-2);outline-offset:2px;border-radius:3px}
+@keyframes riseIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.hero-inner>div:first-child>*,.hero-inner>.eyebrow,.hero-inner>h1,.hero-inner>.lede,.hero-inner>.tagline,.hero-inner>.cta-row,.hero-card{animation:riseIn .7s cubic-bezier(.2,.7,.2,1) both}
+.hero-inner>div:first-child>*:nth-child(2),.hero-inner>h1{animation-delay:.07s}
+.hero-inner>div:first-child>*:nth-child(3),.hero-inner>.lede{animation-delay:.14s}
+.hero-inner>div:first-child>*:nth-child(4),.hero-inner>.tagline{animation-delay:.2s}
+.hero-inner>div:first-child>*:nth-child(5),.hero-inner>.cta-row{animation-delay:.27s}
+.hero-card{animation-delay:.18s}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:900px){
+  nav.main,.hdr-phone{display:none}
+  .menu-btn{display:block}
+  .hero-inner,.offer .grid,.about .grid,.faq .grid,.visit .grid{grid-template-columns:1fr}
+  .hero-card{max-width:360px;margin-top:10px}
+  .gal,.rev-grid{grid-template-columns:1fr 1fr}.gal .frame{margin-top:0!important}
+  section{padding:70px 0}
+  .svc{grid-template-columns:auto 1fr;gap:14px}
+  .svc .price{grid-column:2;font-size:1.3rem}
+  .svc .arw{display:none}
+}
+@media(max-width:560px){
+  .gal,.rev-grid,.bform{grid-template-columns:1fr}
+  .hero-inner{padding:64px 24px 60px}
+  .concept{font-size:.6rem;padding:7px 12px}
+}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+
+<header class="site">
+  <div class="bar">
+    <a class="brand" href="#top">Lumière <small>Aesthetic Studio</small></a>
+    <nav class="main">
+      <a href="#services">Treatments</a>
+      <a href="#results">Results</a>
+      <a href="#about">Our Injector</a>
+      <a href="#faq">FAQ</a>
+      <a href="#visit">Visit</a>
+    </nav>
+    <div class="hdr-cta">
+      <span class="hdr-phone">☎ <b>(480) 555-0192</b></span>
+      <a href="#book" class="btn btn-solid">Book Consult</a>
+    </div>
+    <button class="menu-btn" aria-label="Menu" onclick="document.querySelector('nav.main').scrollIntoView()">☰</button>
+  </div>
+</header>
+<main>
+
+<a id="top"></a>
+<section class="hero on-dark" style="padding:0">
+  <div class="hero-inner">
+    <div>
+      <span class="eyebrow">Old Town Scottsdale, Arizona</span>
+      <h1>Refined injectables,<br><em>never</em> overdone.</h1>
+      <p class="lede">Boutique Botox, dermal filler and skin boosters by expert nurse injectors, for results that look like a well-rested you, not like work.</p>
+      <div class="cta-row">
+        <a href="#book" class="btn btn-solid">Book a Complimentary Consult</a>
+        <a href="#services" class="btn btn-ghost">View Treatments</a>
+      </div>
+      <div class="stars"><span class="s">★★★★★</span> 4.9 from 210+ Scottsdale reviews</div>
+    </div>
+    <div class="hero-card">
+      <div class="img"></div>
+      <div class="badge">RN<span>Injectors</span></div>
+      <div class="tag"><span>Signature Lip Refresh</span><span>from $650</span></div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="row">
+    <span><span class="dot"></span>Allergan Diamond Provider</span>
+    <span><span class="dot"></span>Master Nurse Injectors</span>
+    <span><span class="dot"></span>Natural-Result Philosophy</span>
+    <span><span class="dot"></span>Complimentary Consults</span>
+    <span><span class="dot"></span>Financing via Cherry</span>
+  </div>
+</div>
+
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div>
+        <span class="eyebrow">The Menu</span>
+        <h2 style="margin-top:16px">Treatments, priced with nothing hidden.</h2>
+      </div>
+      <p>Every visit begins with a facial-balancing consult. We only recommend what suits your anatomy, and we'll tell you when you don't need anything at all.</p>
+    </div>
+    <div class="svc-list">
+      <div class="svc reveal"><span class="no">01</span><div><h3>Wrinkle Relaxers · Botox &amp; Dysport</h3><p class="desc">Soften forehead lines, 11's and crow's feet while keeping natural expression.</p></div><span class="price">$12<span style="font-size:.7rem">/unit</span></span><span class="arw">→</span></div>
+      <div class="svc reveal"><span class="no">02</span><div><h3>Lip Enhancement</h3><p class="desc">Subtle hydration and definition, balanced to your smile, never duck-y.</p></div><span class="price">$650</span><span class="arw">→</span></div>
+      <div class="svc reveal"><span class="no">03</span><div><h3>Dermal Filler &amp; Facial Balancing</h3><p class="desc">Cheeks, chin, jawline and under-eye. Structure that reads as good genes.</p></div><span class="price">$750</span><span class="arw">→</span></div>
+      <div class="svc reveal"><span class="no">04</span><div><h3>Skinvive™ Skin Boosters</h3><p class="desc">Micro-droplet hydration for that lit-from-within, glass-skin finish.</p></div><span class="price">$550</span><span class="arw">→</span></div>
+      <div class="svc reveal"><span class="no">05</span><div><h3>PRP Under-Eye Rejuvenation</h3><p class="desc">Your own platelets to brighten hollows and smooth fine crepey texture.</p></div><span class="price">$600</span><span class="arw">→</span></div>
+      <div class="svc reveal"><span class="no">06</span><div><h3>Sculptra® Collagen Restoration</h3><p class="desc">Gradual, natural volume that builds your own collagen over months.</p></div><span class="price">$900</span><span class="arw">→</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="offer on-dark">
+  <div class="wrap">
+    <div class="grid reveal">
+      <div>
+        <span class="eyebrow">New Guest Offer</span>
+        <div class="price" style="margin-top:18px">$100 off <s>first visit</s></div>
+        <p style="color:var(--rose);margin-top:8px;max-width:40ch">Your first treatment of $400 or more, plus a complimentary facial-balancing consult with a master injector.</p>
+        <ul>
+          <li>Complimentary consult &amp; treatment plan</li>
+          <li>$100 credit toward your first service</li>
+          <li>Double Allē &amp; ASPIRE loyalty points</li>
+          <li>No pressure, ever. We'd rather you love it than book it</li>
+        </ul>
+        <div class="cta-row" style="margin-top:30px">
+          <a href="#book" class="btn btn-solid">Claim New Guest Offer</a>
+        </div>
+      </div>
+      <div class="panel"><div class="lbl">◐ Client photography · your studio &amp; results shine here</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="results" class="results">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="eyebrow">Real Guests, Real Restraint</span><h2 style="margin-top:16px">The tell is that there's no tell.</h2></div>
+      <p>Before &amp; afters photographed in-studio under consistent lighting. Individual results vary, your plan is built for your face.</p>
+    </div>
+    <div class="gal">
+      <div class="frame f1 reveal"><div class="ph"></div><div class="cap"><span>Lip Refresh</span><span>1 syringe</span></div></div>
+      <div class="frame f2 reveal"><div class="ph"></div><div class="cap"><span>Jaw &amp; Chin</span><span>Filler</span></div></div>
+      <div class="frame f3 reveal"><div class="ph"></div><div class="cap"><span>Full-Face Botox</span><span>4 weeks</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="reviews on-dark">
+  <div class="wrap">
+    <div class="rev-head reveal">
+      <span class="eyebrow" style="color:var(--gold-2)">Loved in Scottsdale</span>
+      <div class="big">4.9 <small>★★★★★ · 210+ reviews</small></div>
+    </div>
+    <div class="rev-grid">
+      <div class="rev reveal"><div class="s">★★★★★</div><p>"I've finally found an injector who talks me out of things. It looks like me, and my husband can't figure out what changed."</p><div class="who">Marisol R. · Paradise Valley</div></div>
+      <div class="rev reveal"><div class="s">★★★★★</div><p>"The consult alone was worth it. They mapped my whole face and explained every unit. Zero sales pressure."</p><div class="who">Danielle K. · Scottsdale</div></div>
+      <div class="rev reveal"><div class="s">★★★★★</div><p>"Booked on a lunch break, in and out in 30 minutes, and my crow's feet are gone. This is my forever spot."</p><div class="who">Priya N. · Tempe</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="wrap">
+    <div class="grid">
+      <div class="portrait reveal"><div class="lbl">◐ Lead injector portrait · client photography</div></div>
+      <div class="reveal">
+        <span class="eyebrow">Meet Your Injector</span>
+        <h2 style="margin-top:16px">Alexandra Voss, RN, BSN</h2>
+        <blockquote>"My job is to make you look rested and like yourself, not to sell you a face that isn't yours."</blockquote>
+        <p style="color:var(--muted)">With over a decade in aesthetic nursing and 8,000+ treatments, Alexandra founded Lumière on a single principle: restraint. Every plan is mapped to your anatomy, your budget and the version of you that you actually want to see in the mirror.</p>
+        <div class="creds">
+          <div class="cred"><b>10+</b><span>Years Injecting</span></div>
+          <div class="cred"><b>8,000+</b><span>Treatments</span></div>
+          <div class="cred"><b>Diamond</b><span>Allergan Provider</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="faq">
+  <div class="wrap">
+    <div class="grid">
+      <div class="reveal"><span class="eyebrow">Good to Know</span><h2 style="margin-top:16px;font-size:clamp(2rem,4vw,3rem)">Questions we're asked in every consult.</h2><p style="color:var(--muted);margin-top:18px">Still unsure? Bring your questions to a complimentary consult, with no obligation to treat.</p></div>
+      <div class="reveal">
+        <details open><summary>Will Botox make me look frozen? <span class="ico">+</span></summary><div class="ans">No. Our entire philosophy is natural movement. We dose conservatively and bring you back for a complimentary two-week touch-up so we can refine rather than overdo.</div></details>
+        <details><summary>How much does Botox cost in Scottsdale? <span class="ico">+</span></summary><div class="ans">At Lumière, Botox and Dysport are $12 per unit with transparent pricing, and a typical forehead-and-frown treatment runs 20 to 40 units. Your exact plan is quoted at your complimentary consult before anything begins.</div></details>
+        <details><summary>Is there downtime after filler? <span class="ico">+</span></summary><div class="ans">Most guests return to work the same day. You may have minor swelling or bruising for 24 to 48 hours, which we minimize with careful technique and aftercare.</div></details>
+        <details><summary>Do you offer financing? <span class="ico">+</span></summary><div class="ans">Yes, we offer Cherry financing with 0% options for qualifying guests, plus Allē and ASPIRE rewards to make treatments more affordable over time.</div></details>
+        <details><summary>Where are you located? <span class="ico">+</span></summary><div class="ans">We're in Old Town Scottsdale at 7135 E Camelback Rd, Suite 210, with free covered parking. We serve Scottsdale, Paradise Valley, Tempe and the greater Phoenix area.</div></details>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="visit" class="visit">
+  <div class="wrap">
+    <div class="grid">
+      <div class="info">
+        <h2>Visit Lumière</h2>
+        <div class="nap">
+          <div class="row"><div class="k">Address</div><div class="v"><b>Lumière Aesthetic Studio</b><br>7135 E Camelback Rd, Suite 210<br>Scottsdale, AZ 85251</div></div>
+          <div class="row"><div class="k">Phone</div><div class="v"><b>(480) 555-0192</b></div></div>
+          <div class="row"><div class="k">Hours</div><div class="v">Mon-Fri · 9am to 6pm<br>Saturday · 10am to 4pm<br>Sunday · Closed</div></div>
+          <div class="row"><div class="k">Parking</div><div class="v">Free covered parking · Suite entrance on N Goldwater Blvd</div></div>
+        </div>
+        <div class="cta-row" style="margin-top:34px"><a href="#book" class="btn btn-solid">Book Your Consult</a></div>
+      </div>
+      <div class="map" role="img" aria-label="Map of Lumière Aesthetic Studio in Old Town Scottsdale"><span class="plabel">Old Town Scottsdale</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="book" class="book on-dark">
+  <div class="wrap">
+    <div class="inner">
+      <span class="eyebrow" style="color:var(--gold-2)">Reserve Your Chair</span>
+      <h2 style="margin-top:16px">Your best skin starts with a conversation.</h2>
+      <p>Tell us a little about what you're after. We'll confirm your complimentary consult within one business hour.</p>
+      <form class="bform" onsubmit="return lumSubmit(event)">
+        <!-- GHL calendar / form embed slot -->
+        <div><label>First name</label><input required placeholder="Alex" autocomplete="given-name"></div>
+        <div><label>Phone</label><input required type="tel" placeholder="(480) 555-0000" autocomplete="tel"></div>
+        <div class="full"><label>What are you interested in?</label>
+          <select><option>Complimentary consult</option><option>Botox / Dysport</option><option>Lip enhancement</option><option>Dermal filler &amp; balancing</option><option>Skin boosters / PRP</option><option>Not sure yet, help me decide</option></select>
+        </div>
+        <button class="btn btn-solid" type="submit">Request My Consult →</button>
+        <div class="bnote">By requesting, you agree to be contacted about your appointment. No spam, ever.</div>
+        <div class="formmsg" id="lumMsg">Thank you! This is a concept demo. On a live build this connects to your Go High Level calendar and texts the guest a confirmation.</div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site">
+  <div class="wrap">
+    <div class="grid">
+      <div>
+        <div class="brand" style="font-family:var(--serif);font-size:1.6rem">Lumière</div>
+        <p style="max-width:34ch;opacity:.8">Boutique aesthetic injectables in Old Town Scottsdale. Refined, natural, never overdone.</p>
+      </div>
+      <div><h4>Treatments</h4><ul><li><a href="#services">Botox &amp; Dysport</a></li><li><a href="#services">Lip Enhancement</a></li><li><a href="#services">Dermal Filler</a></li><li><a href="#services">Skin Boosters</a></li></ul></div>
+      <div><h4>Studio</h4><ul><li>7135 E Camelback Rd #210</li><li>Scottsdale, AZ 85251</li><li><a href="tel:+14805550192">(480) 555-0192</a></li><li>Mon-Sat by appointment</li></ul></div>
+    </div>
+    <div class="fine"><span>© 2026 Lumière Aesthetic Studio</span><span>Individual results vary · Not medical advice</span></div>
+  </div>
+</footer>
+
+<div class="concept">Concept site · portfolio demo by <b>Santiago Ambricca</b></div>
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":["MedicalBusiness","HealthAndBeautyBusiness"],
+  "name":"Lumière Aesthetic Studio",
+  "description":"Boutique medical spa offering natural-looking Botox, dermal filler, lip enhancement and skin boosters in Old Town Scottsdale, Arizona.",
+  "url":"https://lumiereaesthetic.example/",
+  "telephone":"+1-480-555-0192",
+  "priceRange":"$$$",
+  "image":"https://lumiereaesthetic.example/og.jpg",
+  "address":{"@type":"PostalAddress","streetAddress":"7135 E Camelback Rd, Suite 210","addressLocality":"Scottsdale","addressRegion":"AZ","postalCode":"85251","addressCountry":"US"},
+  "geo":{"@type":"GeoCoordinates","latitude":33.5019,"longitude":-111.9260},
+  "areaServed":["Scottsdale","Paradise Valley","Tempe","Phoenix"],
+  "openingHoursSpecification":[
+    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"09:00","closes":"18:00"},
+    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"10:00","closes":"16:00"}
+  ],
+  "aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"212"},
+  "hasOfferCatalog":{"@type":"OfferCatalog","name":"Injectable Treatments","itemListElement":[
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Botox & Dysport Wrinkle Relaxers"},"price":"12","priceCurrency":"USD"},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Lip Enhancement"},"price":"650","priceCurrency":"USD"},
+    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Dermal Filler & Facial Balancing"},"price":"750","priceCurrency":"USD"}
+  ]}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Will Botox make me look frozen?","acceptedAnswer":{"@type":"Answer","text":"No. Our philosophy is natural movement. We dose conservatively and offer a complimentary two-week touch-up to refine rather than overdo."}},
+    {"@type":"Question","name":"How much does Botox cost in Scottsdale?","acceptedAnswer":{"@type":"Answer","text":"At Lumière, Botox and Dysport are $12 per unit with transparent pricing. A typical forehead-and-frown treatment runs 20 to 40 units, quoted at your complimentary consult."}},
+    {"@type":"Question","name":"Is there downtime after filler?","acceptedAnswer":{"@type":"Answer","text":"Most guests return to work the same day, with possible minor swelling or bruising for 24 to 48 hours."}},
+    {"@type":"Question","name":"Do you offer financing?","acceptedAnswer":{"@type":"Answer","text":"Yes, we offer Cherry financing with 0% options for qualifying guests, plus Allē and ASPIRE rewards."}}
+  ]
+}
+</script>
+<script>
+function lumSubmit(e){e.preventDefault();document.getElementById('lumMsg').style.display='block';e.target.querySelector('button').textContent='Request received ✓';return false;}
+
+</script>
+</body>
+</html>
